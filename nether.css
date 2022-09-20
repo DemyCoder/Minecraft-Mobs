@@ -1,0 +1,301 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: black;
+}
+.nav{
+    background-color: red;
+}
+h1{
+    display: inline-block;
+  position: absolute;
+  color: black;
+  font-size: 25px;
+  left: 60px;
+  top: 8px;
+}
+.mobs_cerdozombie-gif{
+    display:block;
+    margin-left: 48px;
+    margin-top: 15px;
+}
+.mobs_cerdozombie-subtitle{
+    display:block;
+  position: absolute;
+  color: pink;
+  font-size: 30px;
+  margin-left: 35px;
+  margin-top: 20px;
+}
+.mobs_cerdozombie-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 45px;
+    margin-top: 55px;
+}
+.mobs_cerdozombie-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 45px;
+    margin-top: 80px;
+}
+.mobs_cerdozombie-texto3{
+    display:inline-block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 130px;
+}
+.mobs_cerdozombie-texto4{
+    display:block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 160px;
+}
+.mobs_cerdozombie-texto5{
+    display:block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 180px;
+}
+.mobs_cerdozombie-texto6{
+    display:block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 25px;
+    margin-top: 200px;
+}
+.mobs_piglin-gif{
+    display:block;
+    margin-left: 308px;
+    margin-top: -250px;
+}
+.mobs_piglin-subtitle{
+    display:block;
+    position: absolute;
+    color: pink;
+    font-size: 30px;
+    margin-left: 380px;
+    margin-top: 8px;
+}
+.mobs_piglin-texto1{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 343px;
+    margin-top: 55px;
+}
+.mobs_piglin-texto2{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 342px;
+    margin-top: 85px;
+}
+.mobs_piglin-texto3{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 342px;
+    margin-top: 105px;
+}
+.mobs_blaze-gif{
+    display:block;
+    margin-left: 568px;
+    margin-top: -250px;
+}
+.mobs_blaze-subtitle{
+    display:block;
+    position: absolute;
+    color: orange;
+    font-size: 30px;
+    margin-left: 605px;
+    margin-top: 8px;
+}
+.mobs_blaze-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 586px;
+    margin-top: 55px;
+}
+.mobs_blaze-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 586px;
+    margin-top: 80px;
+}
+.mobs_esqueletowither-jpg{
+display:block;
+margin-left: 818px;
+margin-top: -250px;
+}
+.mobs_esqueletowither-subtitle{
+    display:block;
+    position: absolute;
+    color: grey;
+    font-size: 30px;
+    margin-left: 802px;
+    margin-top: 8px;
+}
+.mobs_esqueletowither-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 824px;
+    margin-top: 55px;
+}
+.mobs_esqueletowither-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 824px;
+    margin-top: 80px;
+}
+.mobs_esqueletowither-texto3{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 824px;
+    margin-top: 105px;
+}
+.mobs_esqueletowither-texto4{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 795px;
+    margin-top: 150px;
+}
+.mobs_esqueletowither-texto5{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 795px;
+    margin-top: 180px;
+}
+.mobs_cubodemagma-gif{
+    display:block;
+    margin-left: 48px;
+    margin-top: 300px;
+}
+.mobs_cubodemagma-subtitle{
+    display:block;
+  position: absolute;
+  color: red;
+  font-size: 30px;
+  margin-left: 25px;
+  margin-top: 10px;
+}
+.mobs_cubodemagma-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+.mobs_cubodemagma-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 85px;
+}
+.mobs_ghast-gif{
+    display:block;
+    margin-left: 328px;
+    margin-top: -315px;
+}
+.mobs_ghast-subtitle{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    margin-left: 328px;
+    margin-top: 20px;
+}
+.mobs_ghast-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 333px;
+    margin-top: 70px;
+}
+.mobs_ghast-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 333px;
+    margin-top: 95px;
+}
+.mobs_ghast-texto3{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 333px;
+    margin-top: 115px;
+}
+footer{
+    background-color: crimson;
+    margin-top: 400px;
+}
+.cybergang{
+    display: inline-block;
+    margin: 20px;
+    margin-left: 50px;
+}
+.discord{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    left: 150px;
+    top: 1345px;
+}
+.server{
+    margin-bottom: 20px;
+    margin-left: 420px;
+}
+.server2{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    left: 680px;
+    top: 1325px;
+}
+.server3{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    left: 680px;
+    top: 1365px;
+}

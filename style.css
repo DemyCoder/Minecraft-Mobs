@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+background-color: black;
+}
+.nav{
+    background-color: green;
+}
+h1{
+    display: inline-block;
+  position: absolute;
+  color: black;
+  font-size: 25px;
+  left: 60px;
+  top: 8px;
+}
+h2{
+    color: greenyellow;
+    margin-left: 30px ;
+    margin-top: 40px;
+}
+.overworldtierra{
+    position: absolute;
+    display: inline-block;
+    margin-top: 20px;
+    opacity: 0.6;
+    transition: 0.7s;
+}
+.overworldtierra:hover{
+    opacity: 1;
+}
+.overworldmar{
+    display: inline-block;
+  position: absolute;
+  color: aqua;
+  font-size: 25px;
+  left: 260px;
+  top: 45px;
+}
+.overworldmar2{
+    margin-top: 20px;
+    margin-left: 260px;
+    opacity: 0.6;
+    transition: 0.7s;
+}
+.overworldmar2:hover{
+    opacity: 1;
+}
+.nether{
+    display: inline-block;
+  position: absolute;
+  color: red;
+  font-size: 25px;
+  left: 570px;
+  top: 45px;
+}
+.nether2{
+    margin-top: -400px;
+    margin-left: 520px;
+    opacity: 0.6;
+    transition: 0.7s;
+}
+.nether2:hover{
+    opacity: 1;
+}
+.end{
+    display: inline-block;
+    position: absolute;
+    color: purple;
+    font-size: 25px;
+    left: 860px;
+    top: 45px;
+}
+.end2{
+    margin-top: -400px;
+    margin-left: 779px;
+    opacity: 0.6;
+    transition: 0.7s;
+}
+.end2:hover{
+    opacity: 1;
+}
+.descripcion_subtitle{
+    color:blue;
+}
+.descripcion_texto{
+    color:white;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+    margin-bottom: 70px;
+}
+footer{
+    background-color: crimson;
+    display: flex;
+    justify-content: start;
+}
+.cybergang{
+    display: block;
+    margin: 20px;
+    margin-left: 50px;
+}
+.discord{
+    display: block;
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    left: 150px;
+    top: 766px;
+}
+.server{
+    margin: 20px;
+    margin-left: 420px;
+}
+.server2{
+    display:block;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    left: 680px;
+    top: 750px;
+}
+.server3{
+    display:block;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    left: 680px;
+    top: 780px;
+}

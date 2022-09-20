@@ -1,0 +1,216 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+background-color: black;
+}
+.nav{
+    background-color: aqua;
+}
+h1{
+    display: inline-block;
+  position: absolute;
+  color: black;
+  font-size: 25px;
+  left: 60px;
+  top: 8px;
+}
+.mobs_ahogado-jpg{
+    display:block;
+    margin-left: 48px;
+    margin-top: 30px;
+}
+.mobs_ahogado-subtitle{
+    display:block;
+  position: absolute;
+  color: lightseagreen;
+  font-size: 30px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+.mobs_ahogado-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 85px;
+    margin-top: 70px;
+}
+.mobs_ahogado-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 85px;
+    margin-top: 95px;
+}
+.mobs_ahogado-texto3{
+    display:block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 145px;
+}
+.mobs_ahogado-texto4{
+    display: block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 175px;
+}
+.mobs_ahogado-texto5{
+    display:block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 195px;
+}
+.mobs_ahogado-texto6{
+    display: block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 215px;
+}
+.mobs_guardian-gif{
+    display:block;
+    margin-left: 408px;
+    margin-top: -250px;
+}
+.mobs_guardian-subtitle{
+    display:block;
+    position: absolute;
+    color: aquamarine;
+    font-size: 30px;
+    margin-left: 420px;
+    margin-top: 21px;
+}
+.mobs_guardian-texto1{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 390px;
+    margin-top: 75px;
+}
+.mobs_guardian-texto2{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 390px;
+    margin-top: 105px;
+}
+.mobs_guardian-texto3{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 390px;
+    margin-top: 125px;
+}
+.mobs_guardian-texto4{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 390px;
+    margin-top: 145px;
+}
+.mobs_guardiananciano-gif{
+    display:block;
+    margin-left: 768px;
+    margin-top: -250px;
+}
+.mobs_guardiananciano-subtitle{
+    display:block;
+    position: absolute;
+    color: grey;
+    font-size: 30px;
+    margin-left: 737px;
+    margin-top: 21px;
+}
+.mobs_guardiananciano-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 765px;
+    margin-top: 70px;
+}
+.mobs_guardiananciano-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 765px;
+    margin-top: 95px;
+}
+.estructuras_ruinas-jpg{
+    display: block;
+    margin-left: 50px;
+    margin-top: 320px;
+}
+.estructuras_ruinas-subtitle{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 117px;
+    margin-top: 45px;
+}
+.estructuras_templo-jpg{
+    display: block;
+    margin-left: 520px;
+    margin-top: -300px;
+}
+.estructuras_templo-subtitle{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 590px;
+    margin-top: 45px;
+}
+footer{
+    background-color: crimson;
+    margin-top: 300px;
+}
+.cybergang{
+    display: inline-block;
+    margin: 20px;
+    margin-left: 50px;
+}
+.discord{
+    display: inline-block;
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    left: 150px;
+    top: 1297px;
+}
+.server{
+    margin-bottom: 20px;
+    margin-left: 420px;
+}
+.server2{
+    display: inline-block;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    left: 680px;
+    top: 1281px;
+}
+.server3{
+    display: inline-block;
+    position: absolute;
+    color: black;
+    font-size: 20px;
+    left: 680px;
+    top: 1312px;
+}

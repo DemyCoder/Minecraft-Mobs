@@ -1,0 +1,124 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+background-color: black;
+}
+.nav{
+    background-color: purple;
+}
+h1{
+    display: inline-block;
+  position: absolute;
+  color: black;
+  font-size: 25px;
+  left: 60px;
+  top: 8px;
+}
+.mobs_enderman-gif{
+    display:block;
+    margin-left: 48px;
+    margin-top: 30px;
+}
+.mobs_enderman-subtitle{
+    display:block;
+  position: absolute;
+  color: purple;
+  font-size: 30px;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+.mobs_enderman-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 85px;
+    margin-top: 70px;
+}
+.mobs_enderman-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 85px;
+    margin-top: 95px;
+}
+.mobs_enderman-texto3{
+    display:block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 145px;
+}
+.mobs_enderman-texto4{
+    display: block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 175px;
+}
+.mobs_enderdragon-gif{
+    display:block;
+    position: absolute;
+    color: purple;
+    font-size: 30px;
+    margin-left: 420px;
+    margin-top: -420px;
+}
+.mobs_enderdragon-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 430px;
+    margin-top: 25px;
+}
+.mobs_enderdragon-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 430px;
+    margin-top: 50px;
+}
+footer{
+    background-color: crimson;
+    margin-top: 400px;
+}
+.cybergang{
+    display: inline-block;
+    margin: 20px;
+    margin-left: 50px;
+}
+.discord{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    left: 150px;
+    top: 775px;
+}
+.server{
+    margin-bottom: 20px;
+    margin-left: 420px;
+}
+.server2{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    left: 680px;
+    top: 760px;
+}
+.server3{
+    display: inline-block;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    left: 680px;
+    top: 795px;
+}
