@@ -16,6 +16,17 @@ h1{
   font-size: 25px;
   left: 60px;
   top: 8px;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .nav_responsive{
     display: none;
@@ -29,6 +40,19 @@ h1{
     display: block;
     background-color: purple;
     width: 100%;
+}
+.nav_responsive h1{
+    animation-name: aparecer-responsive;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+@keyframes aparecer-responsive {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 }
 /*Mobs escritorio*/

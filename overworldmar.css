@@ -16,6 +16,17 @@ h1{
   font-size: 25px;
   left: 60px;
   top: 8px;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 .nav_responsive{
     display: none;
@@ -29,6 +40,19 @@ h1{
     display: block;
     background-color: aqua;
     width: 100%;
+}
+.nav_responsive h1{
+    animation-name: aparecer-responsive;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+@keyframes aparecer-responsive {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 }
 /*Mobs escritorio*/
@@ -196,6 +220,7 @@ h1{
 }
 .ahogado_responsive{
     margin-bottom: 200px;
+    padding-right: 60px;
 }
 .mobs_ahogado_responsive-subtitle{
     display:block;
@@ -245,7 +270,86 @@ h1{
     margin-left: 15px;
     margin-top: 155px;
 }
+.mobs_ahogado_responsive-texto6{
+    display: block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 175px;
 }
+.guardian_responsive{
+    margin-bottom: 200px;
+}
+.mobs_guardian_responsive-gif{
+    margin-left: 40px;
+}
+.mobs_guardian_responsive-subtitle{
+    display:block;
+    position: absolute;
+    color: aquamarine;
+    font-size: 30px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.mobs_guardian_responsive-texto1{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 60px;
+}
+.mobs_guardian_responsive-texto2{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 80px;
+}
+.mobs_guardian_responsive-texto3{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+.mobs_guardian_responsive-texto4{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-top: 120px;
+}
+.mobs_guardiananciano_responsive-subtitle{
+    display:block;
+    position: absolute;
+    color: grey;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+.mobs_guardiananciano_responsive-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 90px;
+}
+.mobs_guardiananciano_responsive-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 30px;
+    margin-top: 115px;
+}
+}
+/*Estructuras escritorio*/
 .estructuras{
     display: flex;
     justify-content: start;
@@ -276,6 +380,42 @@ h1{
     margin-left: 90px;
     margin-top: 45px;
 }
+.estructuras_responsive{
+    display:none;
+}
+/*Estructuras responsive*/
+@media screen and (max-width: 720px){
+    .estructuras{
+        display: none;
+    }
+    .estructuras_responsive{
+        display: flex;
+        flex-direction: column;
+        align-items:flex-start;
+        margin-top: 200px;
+        padding-left: 15px;
+    }
+    .estructuras_ruinas_responsive-jpg{
+        padding-bottom: 100px;
+    }
+    .estructuras_ruinas_responsive-subtitle{
+        display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 50px;
+    margin-top: -85px;
+    }
+    .estructuras_templo_responsive-subtitle{
+        display:block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 50px;
+        margin-top: 30px;
+    }
+/*Footer escritorio*/
+}
 footer{
     margin-top: 500px;
     background-color: crimson;
@@ -300,3 +440,20 @@ footer{
 .footer_responsive{
     display: none;
 }
+/*Footer responsive*/
+@media screen and (max-width: 720px){
+    footer{
+        display: none;
+    }
+    .footer_responsive{
+        display: block;
+        margin-top: 300px;
+        background-color: crimson;
+    }
+    .footer2_responsive{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-evenly;
+    }
+    }
