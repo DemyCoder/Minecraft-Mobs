@@ -5,6 +5,7 @@
 body{
 background-color: black;
 }
+/*nav escritorio*/
 .nav{
     background-color: aqua;
 }
@@ -16,9 +17,28 @@ h1{
   left: 60px;
   top: 8px;
 }
+.nav_responsive{
+    display: none;
+}
+/*nav responsive*/
+@media screen and (max-width: 720px){
+.nav{
+    display: none;
+}
+.nav_responsive{
+    display: block;
+    background-color: aqua;
+    width: 100%;
+}
+}
+/*Mobs escritorio*/
+.mobs{
+    display: flex;
+    justify-content: start;
+}
 .mobs_ahogado-jpg{
     display:block;
-    margin-left: 48px;
+    margin-left: 88px;
     margin-top: 30px;
 }
 .mobs_ahogado-subtitle{
@@ -79,68 +99,72 @@ h1{
 }
 .mobs_guardian-gif{
     display:block;
-    margin-left: 408px;
-    margin-top: -250px;
+    margin-left: 88px;
+    margin-top: 30px;
 }
 .mobs_guardian-subtitle{
     display:block;
     position: absolute;
     color: aquamarine;
     font-size: 30px;
-    margin-left: 420px;
-    margin-top: 21px;
+    margin-left: 100px;
+    margin-top: 20px;
 }
 .mobs_guardian-texto1{
     display:block;
     position: absolute;
     color: greenyellow;
     font-size: 20px;
-    margin-left: 390px;
-    margin-top: 75px;
+    margin-left: 85px;
+    margin-top: 70px;
 }
 .mobs_guardian-texto2{
     display:block;
     position: absolute;
     color: greenyellow;
     font-size: 20px;
-    margin-left: 390px;
-    margin-top: 105px;
+    margin-left: 85px;
+    margin-top: 100px;
 }
 .mobs_guardian-texto3{
     display:block;
     position: absolute;
     color: greenyellow;
     font-size: 20px;
-    margin-left: 390px;
-    margin-top: 125px;
+    margin-left: 85px;
+    margin-top: 120px;
 }
 .mobs_guardian-texto4{
     display:block;
     position: absolute;
     color: greenyellow;
     font-size: 20px;
-    margin-left: 390px;
-    margin-top: 145px;
+    margin-left: 85px;
+    margin-top: 140px;
+}
+.guardian{
+    display: block;
+    margin-left: 60px;
 }
 .mobs_guardiananciano-gif{
     display:block;
-    margin-left: 768px;
-    margin-top: -250px;
+    margin-left: 110px;
+    margin-top: 30px;
 }
 .mobs_guardiananciano-subtitle{
     display:block;
     position: absolute;
     color: grey;
     font-size: 30px;
-    margin-left: 737px;
-    margin-top: 21px;
+    margin-left: 80px;
+    margin-top: 20px;
 }
 .mobs_guardiananciano-texto1{
     display:block;
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 765px;
+    margin-left: 85px;
     margin-top: 70px;
 }
 .mobs_guardiananciano-texto2{
@@ -148,8 +172,83 @@ h1{
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 765px;
+    margin-left: 85px;
     margin-top: 95px;
+}
+.guardian_anciano{
+    display: block;
+    margin-left: 60px;
+}
+.mobs_responsive{
+    display: none;
+}
+/*Mobs responsive*/
+@media screen and (max-width: 720px){
+.mobs{
+    display: none;
+}
+.mobs_responsive{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+    margin-top: 25px;
+}
+.ahogado_responsive{
+    margin-bottom: 200px;
+}
+.mobs_ahogado_responsive-subtitle{
+    display:block;
+    position: absolute;
+  color: lightseagreen;
+  font-size: 30px;
+  margin-left: 45px;
+  margin-top: 20px;
+}
+.mobs_ahogado_responsive-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 35px;
+    margin-top: 50px;
+}
+.mobs_ahogado_responsive-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 35px;
+    margin-top: 75px;
+}
+.mobs_ahogado_responsive-texto3{
+    display:block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 110px;
+}
+.mobs_ahogado_responsive-texto4{
+    display: block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 135px;
+}
+.mobs_ahogado_responsive-texto5{
+    display:block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-top: 155px;
+}
+}
+.estructuras{
+    display: flex;
+    justify-content: start;
 }
 .estructuras_ruinas-jpg{
     display: block;
@@ -164,53 +263,40 @@ h1{
     margin-left: 117px;
     margin-top: 45px;
 }
-.estructuras_templo-jpg{
-    display: block;
-    margin-left: 520px;
-    margin-top: -300px;
+.templo{
+    display:block;
+    margin-left: 40px;
+    margin-top: 320px;
 }
 .estructuras_templo-subtitle{
     display:block;
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 590px;
+    margin-left: 90px;
     margin-top: 45px;
 }
 footer{
+    margin-top: 500px;
     background-color: crimson;
-    margin-top: 300px;
 }
-.cybergang{
-    display: inline-block;
-    margin: 20px;
-    margin-left: 50px;
-}
-.discord{
-    display: inline-block;
-    position: absolute;
-    color: black;
-    font-size: 25px;
-    left: 150px;
-    top: 1297px;
-}
-.server{
-    margin-bottom: 20px;
-    margin-left: 420px;
-}
-.server2{
-    display: inline-block;
-    position: absolute;
-    color: black;
-    font-size: 20px;
-    left: 680px;
-    top: 1281px;
+.footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .server3{
-    display: inline-block;
     position: absolute;
-    color: black;
-    font-size: 20px;
-    left: 680px;
-    top: 1312px;
+    margin-left: 380px;
+    margin-top: 40px;
+}
+.server2{
+    margin-right: 45px;
+    margin-top: 10px;
+}
+.discord{
+    margin-top: 25px;
+}
+.footer_responsive{
+    display: none;
 }

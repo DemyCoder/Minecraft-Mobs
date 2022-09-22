@@ -5,6 +5,7 @@
 body{
 background-color: black;
 }
+/*nav escritorio*/
 .nav{
     background-color: purple;
 }
@@ -16,12 +17,27 @@ h1{
   left: 60px;
   top: 8px;
 }
-.mobs_enderman-gif{
+.nav_responsive{
+    display: none;
+}
+/*nav responsive*/
+@media screen and (max-width: 720px){
+.nav{
+    display: none;
+}
+.nav_responsive{
+    display: block;
+    background-color: purple;
+    width: 100%;
+}
+}
+/*Mobs escritorio*/
+.enderman-gif{
     display:block;
     margin-left: 48px;
     margin-top: 30px;
 }
-.mobs_enderman-subtitle{
+.enderman-subtitle{
     display:block;
   position: absolute;
   color: purple;
@@ -29,7 +45,7 @@ h1{
   margin-left: 60px;
   margin-top: 20px;
 }
-.mobs_enderman-texto1{
+.enderman-texto1{
     display:block;
     position: absolute;
     color: white;
@@ -37,7 +53,7 @@ h1{
     margin-left: 85px;
     margin-top: 70px;
 }
-.mobs_enderman-texto2{
+.enderman-texto2{
     display:block;
     position: absolute;
     color: white;
@@ -45,7 +61,7 @@ h1{
     margin-left: 85px;
     margin-top: 95px;
 }
-.mobs_enderman-texto3{
+.enderman-texto3{
     display:block;
     position: absolute;
     color:greenyellow;
@@ -53,7 +69,7 @@ h1{
     margin-left: 60px;
     margin-top: 145px;
 }
-.mobs_enderman-texto4{
+.enderman-texto4{
     display: block;
     position: absolute;
     color:greenyellow;
@@ -62,12 +78,16 @@ h1{
     margin-top: 175px;
 }
 .mobs_enderdragon-gif{
-    display:block;
-    position: absolute;
-    color: purple;
-    font-size: 30px;
     margin-left: 420px;
-    margin-top: -420px;
+    margin-top: -260px;
+}
+.enderdragon-subtitle{
+    display:block;
+  position: absolute;
+  color: purple;
+  font-size: 30px;
+  margin-left: 390px;
+  margin-top: 10px;
 }
 .mobs_enderdragon-texto1{
     display:block;
@@ -75,7 +95,7 @@ h1{
     color: white;
     font-size: 25px;
     margin-left: 430px;
-    margin-top: 25px;
+    margin-top: 60px;
 }
 .mobs_enderdragon-texto2{
     display:block;
@@ -83,42 +103,134 @@ h1{
     color: white;
     font-size: 25px;
     margin-left: 430px;
-    margin-top: 50px;
+    margin-top: 85px;
 }
-footer{
-    background-color: crimson;
-    margin-top: 400px;
+.mobs{
+    display: flex;
+    justify-content: start;
 }
-.cybergang{
-    display: inline-block;
-    margin: 20px;
-    margin-left: 50px;
+.enderdragon{
+    margin-top: 290px;
 }
-.discord{
-    display: inline-block;
+.mobs_responsive{
+    display: none;
+}
+/*Mobs responsive*/
+@media screen and (max-width: 720px){
+.mobs{
+    display: none;
+}
+.mobs_responsive{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+}
+.enderman_responsive-subtitle{
+    display:block;
+  position: absolute;
+  color: purple;
+  font-size: 30px;
+  margin-left: 20px;
+}
+.enderman_responsive-texto1{
+    display:block;
     position: absolute;
     color: white;
     font-size: 25px;
-    left: 150px;
-    top: 775px;
+    margin-left: 20px;
+    margin-top: 35px;
 }
-.server{
-    margin-bottom: 20px;
-    margin-left: 420px;
-}
-.server2{
-    display: inline-block;
+.enderman_responsive-texto2{
+    display:block;
     position: absolute;
     color: white;
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 60px;
+}
+.enderman_responsive-texto3{
+    display:block;
+    position: absolute;
+    color:greenyellow;
     font-size: 20px;
-    left: 680px;
-    top: 760px;
+    margin-left: 10px;
+    margin-top: 95px;
+}
+.enderman_responsive-texto4{
+    display: block;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 120px;
+}
+.enderdragon_responsive{
+    margin-right: 70px;
+}
+.mobs_enderdragon_responsive-gif{
+    margin-top: 120px;
+}
+.enderdragon_responsive-subtitle{
+    display:block;
+  position: absolute;
+  color: purple;
+  font-size: 30px;
+}
+.mobs_enderdragon_responsive-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-top: 35px;
+}
+.mobs_enderdragon_responsive-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-top: 60px;
+}
+}
+/*Footer escritorio*/
+footer{
+    margin-top: 500px;
+    background-color: crimson;
+}
+.footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .server3{
-    display: inline-block;
     position: absolute;
-    color: white;
-    font-size: 20px;
-    left: 680px;
-    top: 795px;
+    margin-left: 380px;
+    margin-top: 40px;
+}
+.server2{
+    margin-right: 45px;
+    margin-top: 10px;
+}
+.discord{
+    margin-top: 25px;
+}
+.footer_responsive{
+    display: none;
+}
+/*Footer responsive*/
+@media screen and (max-width: 720px){
+footer{
+    display: none;
+}
+.footer_responsive{
+    display: block;
+    margin-top: 300px;
+    background-color: crimson;
+}
+.footer2_responsive{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-evenly;
+}
 }
