@@ -5,6 +5,7 @@
 body{
     background-color: black;
 }
+/*nav escritorio*/
 .nav{
     background-color: red;
 }
@@ -15,18 +16,60 @@ h1{
   font-size: 25px;
   left: 60px;
   top: 8px;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.nav_responsive{
+    display: none;
+}
+/*nav responsive*/
+@media screen and (max-width: 720px){
+.nav{
+    display: none;
+}
+.nav_responsive{
+    display: block;
+    background-color: crimson;
+    width: 100%;
+}
+.nav_responsive h1{
+    animation-name: aparecer-responsive;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
+}
+@keyframes aparecer-responsive {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+}
+/*Mobs escritorio*/
+.mobs{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    margin-top: 50px;
 }
 .mobs_cerdozombie-gif{
     display:block;
-    margin-left: 48px;
-    margin-top: 15px;
 }
 .mobs_cerdozombie-subtitle{
     display:block;
   position: absolute;
   color: pink;
   font-size: 30px;
-  margin-left: 35px;
   margin-top: 20px;
 }
 .mobs_cerdozombie-texto1{
@@ -34,7 +77,6 @@ h1{
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 45px;
     margin-top: 55px;
 }
 .mobs_cerdozombie-texto2{
@@ -42,7 +84,6 @@ h1{
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 45px;
     margin-top: 80px;
 }
 .mobs_cerdozombie-texto3{
@@ -50,7 +91,6 @@ h1{
     position: absolute;
     color:greenyellow;
     font-size: 20px;
-    margin-left: 25px;
     margin-top: 130px;
 }
 .mobs_cerdozombie-texto4{
@@ -58,7 +98,6 @@ h1{
     position: absolute;
     color:greenyellow;
     font-size: 20px;
-    margin-left: 25px;
     margin-top: 160px;
 }
 .mobs_cerdozombie-texto5{
@@ -66,7 +105,6 @@ h1{
     position: absolute;
     color:greenyellow;
     font-size: 20px;
-    margin-left: 25px;
     margin-top: 180px;
 }
 .mobs_cerdozombie-texto6{
@@ -74,36 +112,33 @@ h1{
     position: absolute;
     color:greenyellow;
     font-size: 20px;
-    margin-left: 25px;
     margin-top: 200px;
 }
 .mobs_piglin-gif{
     display:block;
-    margin-left: 308px;
-    margin-top: -250px;
 }
 .mobs_piglin-subtitle{
     display:block;
     position: absolute;
     color: pink;
     font-size: 30px;
-    margin-left: 380px;
-    margin-top: 8px;
+    margin-top: 20px;
+    margin-left: 80px;
 }
 .mobs_piglin-texto1{
     display:block;
     position: absolute;
     color: greenyellow;
     font-size: 20px;
-    margin-left: 343px;
-    margin-top: 55px;
+    margin-left: 45px;
+    margin-top: 60px;
 }
 .mobs_piglin-texto2{
     display:block;
     position: absolute;
     color: greenyellow;
     font-size: 20px;
-    margin-left: 342px;
+    margin-left: 45px;
     margin-top: 85px;
 }
 .mobs_piglin-texto3{
@@ -111,20 +146,19 @@ h1{
     position: absolute;
     color: greenyellow;
     font-size: 20px;
-    margin-left: 342px;
+    margin-left: 45px;
     margin-top: 105px;
 }
 .mobs_blaze-gif{
     display:block;
-    margin-left: 568px;
-    margin-top: -250px;
+    margin-left: 60px;
 }
 .mobs_blaze-subtitle{
     display:block;
     position: absolute;
     color: orange;
     font-size: 30px;
-    margin-left: 605px;
+    margin-left: 100px;
     margin-top: 8px;
 }
 .mobs_blaze-texto1{
@@ -132,7 +166,7 @@ h1{
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 586px;
+    margin-left: 80px;
     margin-top: 55px;
 }
 .mobs_blaze-texto2{
@@ -140,20 +174,19 @@ h1{
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 586px;
+    margin-left: 80px;
     margin-top: 80px;
 }
 .mobs_esqueletowither-jpg{
 display:block;
-margin-left: 818px;
-margin-top: -250px;
+margin-left: 60px;
 }
 .mobs_esqueletowither-subtitle{
     display:block;
     position: absolute;
     color: grey;
     font-size: 30px;
-    margin-left: 802px;
+    margin-left: 40px;
     margin-top: 8px;
 }
 .mobs_esqueletowither-texto1{
@@ -161,7 +194,7 @@ margin-top: -250px;
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 824px;
+    margin-left: 80px;
     margin-top: 55px;
 }
 .mobs_esqueletowither-texto2{
@@ -169,7 +202,7 @@ margin-top: -250px;
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 824px;
+    margin-left: 80px;
     margin-top: 80px;
 }
 .mobs_esqueletowither-texto3{
@@ -177,7 +210,7 @@ margin-top: -250px;
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 824px;
+    margin-left: 80px;
     margin-top: 105px;
 }
 .mobs_esqueletowither-texto4{
@@ -185,7 +218,7 @@ margin-top: -250px;
     position: absolute;
     color: greenyellow;
     font-size: 20px;
-    margin-left: 795px;
+    margin-left: 60px;
     margin-top: 150px;
 }
 .mobs_esqueletowither-texto5{
@@ -193,109 +226,357 @@ margin-top: -250px;
     position: absolute;
     color: greenyellow;
     font-size: 20px;
-    margin-left: 795px;
+    margin-left: 60px;
     margin-top: 180px;
+}
+.mobs2{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-top: 250px;
 }
 .mobs_cubodemagma-gif{
     display:block;
-    margin-left: 48px;
-    margin-top: 300px;
+    margin-right: 200px;
 }
 .mobs_cubodemagma-subtitle{
     display:block;
-  position: absolute;
+    position: absolute;
   color: red;
   font-size: 30px;
-  margin-left: 25px;
-  margin-top: 10px;
+    margin-right: 550px;
+  margin-top: 300px;
 }
 .mobs_cubodemagma-texto1{
     display:block;
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 40px;
-    margin-top: 60px;
+    margin-right: 650px;
+    margin-top: 350px;
 }
 .mobs_cubodemagma-texto2{
     display:block;
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 40px;
-    margin-top: 85px;
+    margin-right: 530px;
+    margin-top: 370px;
 }
 .mobs_ghast-gif{
     display:block;
-    margin-left: 328px;
-    margin-top: -315px;
+    margin-left: 60px;
+    
 }
 .mobs_ghast-subtitle{
     display:block;
     position: absolute;
     color: white;
     font-size: 30px;
-    margin-left: 328px;
-    margin-top: 20px;
+    margin-left: 580px;
+    margin-top: 300px;
 }
 .mobs_ghast-texto1{
     display:block;
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 333px;
-    margin-top: 70px;
+    margin-left: 580px;
+    margin-top: 340px;
 }
 .mobs_ghast-texto2{
     display:block;
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 333px;
-    margin-top: 95px;
+    margin-left: 580px;
+    margin-top: 370px;
 }
 .mobs_ghast-texto3{
     display:block;
     position: absolute;
     color: white;
     font-size: 25px;
-    margin-left: 333px;
-    margin-top: 115px;
+    margin-left: 580px;
+    margin-top: 390px;
 }
-footer{
-    background-color: crimson;
-    margin-top: 400px;
+.mobs_responsive{
+    display: none;
 }
-.cybergang{
-    display: inline-block;
-    margin: 20px;
-    margin-left: 50px;
+.mobs2_responsive{
+    display: none;
 }
-.discord{
-    display: inline-block;
+/*Mobs responsive*/
+@media screen and (max-width: 720px){
+.mobs{
+    display: none;
+}
+.mobs2{
+    display: none;
+}
+.mobs_responsive{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    width: 100%;
+    margin-top: 25px;
+}
+.cerdozombie_responsive{
+    margin-bottom: 300px;
+    padding-right: 60px;
+}
+.mobs_cerdozombie_responsive-subtitle{
+    display:block;
+    position: absolute;
+  color: pink;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.mobs_cerdozombie_responsive-texto1{
+    display:block;
     position: absolute;
     color: white;
     font-size: 25px;
-    left: 150px;
-    top: 1345px;
+    margin-top: 50px;
 }
-.server{
-    margin-bottom: 20px;
-    margin-left: 420px;
-}
-.server2{
-    display: inline-block;
+.mobs_cerdozombie_responsive-texto2{
+    display:block;
     position: absolute;
     color: white;
+    font-size: 25px;
+    margin-top: 75px;
+}
+.mobs_cerdozombie_responsive-texto3{
+    display:block;
+    position: absolute;
+    color:greenyellow;
     font-size: 20px;
-    left: 680px;
-    top: 1325px;
+    margin-left: 5px;
+    margin-top: 110px;
+}
+.mobs_cerdozombie_responsive-texto4{
+    display: block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 135px;
+}
+.mobs_cerdozombie_responsive-texto5{
+    display:block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 155px;
+}
+.mobs_cerdozombie_responsive-texto6{
+    display: block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 175px;
+}
+.piglin_responsive{
+    margin-bottom: 250px;
+    padding-right: 120px;
+}
+.mobs_piglin_responsive-subtitle{
+    display:block;
+    position: absolute;
+    color: pink;
+    font-size: 30px;
+    margin-left: 70px;
+    margin-top: 20px;
+}
+.mobs_piglin_responsive-texto1{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+.mobs_piglin_responsive-texto2{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 80px;
+}
+.mobs_piglin_responsive-texto3{
+    display:block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 100px;
+}
+.blaze_responsive{
+    margin-bottom: 300px;
+    padding-right: 60px;
+}
+.mobs_blaze_responsive-subtitle{
+    display:block;
+    position: absolute;
+    color: orange;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 20px;
+}
+.mobs_blaze_responsive-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 70px;
+}
+.mobs_blaze_responsive-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 95px;
+}
+.esqueletowither_responsive{
+    margin-bottom: 250px;
+    padding-right: 120px;
+}
+.mobs_esqueletowither_responsive-subtitle{
+    display:block;
+    position: absolute;
+  color: grey;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.mobs_esqueletowither_responsive-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+}
+.mobs_esqueletowither_responsive-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-top: 75px;
+}
+.mobs_esqueletowither_responsive-texto3{
+    display:block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 110px;
+}
+.mobs_esqueletowither_responsive-texto4{
+    display: block;
+    position: absolute;
+    color:greenyellow;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-top: 135px;
+}
+.cubodemagma_responsive{
+    margin-bottom: 250px;
+    padding-right: 120px;
+}
+.mobs_cubodemagma_responsive-subtitle{
+    display:block;
+    position: absolute;
+  color: red;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.mobs_cubodemagma_responsive-gif{
+    margin-left: 20px
+}
+.mobs_cubodemagma_responsive-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+}
+.mobs_cubodemagma_responsive-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-top: 75px;
+}
+.ghast_responsive{
+    margin-bottom: 250px;
+    padding-right: 120px;
+    margin-left: 60px;
+}
+.mobs_ghast_responsive-subtitle{
+    display:block;
+    position: absolute;
+  color: white;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.mobs_ghast_responsive-texto1{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-top: 50px;
+}
+.mobs_ghast_responsive-texto2{
+    display:block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-top: 75px;
+}
+/*Footer escritorio*/
+}
+footer{
+    margin-top: 500px;
+    background-color: crimson;
+}
+.footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .server3{
-    display: inline-block;
     position: absolute;
-    color: white;
-    font-size: 20px;
-    left: 680px;
-    top: 1365px;
+    margin-left: 380px;
+    margin-top: 40px;
 }
+.server2{
+    margin-right: 45px;
+    margin-top: 10px;
+}
+.discord{
+    margin-top: 25px;
+}
+.footer_responsive{
+    display: none;
+}
+/*Footer responsive*/
+@media screen and (max-width: 720px){
+    footer{
+        display: none;
+    }
+    .footer_responsive{
+        display: block;
+        margin-top: 300px;
+        background-color: crimson;
+    }
+    .footer2_responsive{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-evenly;
+    }
+    }

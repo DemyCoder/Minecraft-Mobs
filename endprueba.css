@@ -16,17 +16,6 @@ h1{
   font-size: 25px;
   left: 60px;
   top: 8px;
-  animation-name: aparecer;
-  animation-duration: 2s;
-  animation-iteration-count: initial;
-}
-@keyframes aparecer {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
 }
 .nav_responsive{
     display: none;
@@ -40,19 +29,6 @@ h1{
     display: block;
     background-color: purple;
     width: 100%;
-}
-.nav_responsive h1{
-    animation-name: aparecer-responsive;
-  animation-duration: 2s;
-  animation-iteration-count: initial;
-}
-@keyframes aparecer-responsive {
-    0%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-    }
 }
 }
 /*Mobs escritorio*/
@@ -149,7 +125,6 @@ h1{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 25px;
 }
 .enderman_responsive-subtitle{
     display:block;
@@ -166,57 +141,7 @@ h1{
     margin-left: 20px;
     margin-top: 35px;
 }
-.enderman_responsive-texto2{
-    display:block;
-    position: absolute;
-    color: white;
-    font-size: 25px;
-    margin-left: 20px;
-    margin-top: 60px;
 }
-.enderman_responsive-texto3{
-    display:block;
-    position: absolute;
-    color:greenyellow;
-    font-size: 20px;
-    margin-left: 10px;
-    margin-top: 95px;
-}
-.enderman_responsive-texto4{
-    display: block;
-    color:greenyellow;
-    font-size: 20px;
-    margin-left: 10px;
-    margin-top: 120px;
-}
-.enderdragon_responsive{
-    margin-right: 70px;
-}
-.mobs_enderdragon_responsive-gif{
-    margin-top: 120px;
-}
-.enderdragon_responsive-subtitle{
-    display:block;
-  position: absolute;
-  color: purple;
-  font-size: 30px;
-}
-.mobs_enderdragon_responsive-texto1{
-    display:block;
-    position: absolute;
-    color: white;
-    font-size: 25px;
-    margin-top: 35px;
-}
-.mobs_enderdragon_responsive-texto2{
-    display:block;
-    position: absolute;
-    color: white;
-    font-size: 25px;
-    margin-top: 60px;
-}
-}
-/*Footer escritorio*/
 footer{
     margin-top: 500px;
     background-color: crimson;
@@ -232,29 +157,9 @@ footer{
     margin-top: 40px;
 }
 .server2{
-    margin-right: 65px;
+    margin-right: 45px;
     margin-top: 10px;
 }
 .discord{
     margin-top: 25px;
-}
-.footer_responsive{
-    display: none;
-}
-/*Footer responsive*/
-@media screen and (max-width: 720px){
-footer{
-    display: none;
-}
-.footer_responsive{
-    display: block;
-    margin-top: 300px;
-    background-color: crimson;
-}
-.footer2_responsive{
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: space-evenly;
-}
 }
