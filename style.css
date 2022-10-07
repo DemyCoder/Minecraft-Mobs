@@ -5,6 +5,7 @@
 body{
 background-color: black;
 }
+/*nav escritorio*/
 .nav{
     background-color: green;
 }
@@ -15,75 +16,125 @@ h1{
   font-size: 25px;
   left: 60px;
   top: 8px;
+  animation-name: aparecer;
+  animation-duration: 2s;
+  animation-iteration-count: initial;
 }
-h2{
+@keyframes aparecer {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.nav_responsive{
+    display: none;
+}
+/*nav responsive*/
+@media screen and (max-width: 720px){
+    .nav{
+        display: none;
+    }
+    .nav_responsive{
+        display: block;
+        background-color: green;
+        width: 100%;
+    }
+    .nav_responsive h1{
+        animation-name: aparecer-responsive;
+      animation-duration: 2s;
+      animation-iteration-count: initial;
+      font-size: 20px;
+    }
+    @keyframes aparecer-responsive {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    }
+.biomas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+.overworldtierra_h2{
     color: greenyellow;
     margin-left: 30px ;
     margin-top: 40px;
 }
-.overworldtierra{
+.overworldtierra_jpg{
     position: absolute;
     display: inline-block;
     margin-top: 20px;
     opacity: 0.6;
     transition: 0.7s;
 }
-.overworldtierra:hover{
+.overworldtierra_jpg:hover{
     opacity: 1;
 }
 .overworldmar{
-    display: inline-block;
-  position: absolute;
+    margin-top: 38px;
+}
+.overworldmar_h2{
+    display: block;
   color: aqua;
   font-size: 25px;
-  left: 260px;
-  top: 45px;
+  margin-bottom: 20px;
+  margin-left: 40px;
 }
-.overworldmar2{
-    margin-top: 20px;
-    margin-left: 260px;
+.overworldmar_jpg{
     opacity: 0.6;
     transition: 0.7s;
 }
-.overworldmar2:hover{
+.overworldmar_jpg:hover{
     opacity: 1;
 }
 .nether{
-    display: inline-block;
-  position: absolute;
+    margin-top: 38px;
+}
+.nether_h2{
+    display: block;
   color: red;
   font-size: 25px;
-  left: 570px;
-  top: 45px;
+  margin-bottom: 20px;
+margin-left: 80px;
 }
-.nether2{
-    margin-top: -400px;
-    margin-left: 520px;
+.nether_jpg{
     opacity: 0.6;
     transition: 0.7s;
 }
-.nether2:hover{
+.nether_jpg:hover{
     opacity: 1;
 }
-.end{
-    display: inline-block;
-    position: absolute;
+.end_h2{
+    display: block;
     color: purple;
     font-size: 25px;
-    left: 860px;
-    top: 45px;
+    margin-top: 40px;
+    margin-left: 90px;
+    margin-bottom: 20px;
 }
-.end2{
-    margin-top: -400px;
-    margin-left: 779px;
+.end_jpg{
     opacity: 0.6;
     transition: 0.7s;
 }
-.end2:hover{
+.end_jpg:hover{
     opacity: 1;
+}
+.descripcion{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 40px;
 }
 .descripcion_subtitle{
     color:blue;
+    margin-left: 30px;
 }
 .descripcion_texto{
     color:white;
@@ -92,41 +143,148 @@ h2{
     font-size: 20px;
     margin-bottom: 70px;
 }
+.biomas_responsive{
+    display: none;
+}
+/*Biomas responsive*/
+@media screen and (max-width: 720px){
+    .biomas{
+        display: none;
+    }
+    .descripcion{
+        display: none;
+    }
+    .descripcion_responsive{
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 40px;
+    }
+    .descripcion_subtitle_responsive{
+        color:blue;
+        margin-left: 30px;
+    }
+    .descripcion_texto_responsive{
+        color:white;
+        margin-top: 20px;
+        margin-left: 30px;
+        font-size: 20px;
+        margin-bottom: 70px;
+    }
+    .biomas_responsive{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        width: 100%;
+        margin-top: 25px;
+    }
+    .overworldtierra_responsive{
+        margin-right: 30px;
+    }
+    .overworldtierra_h2_responsive{
+        color: greenyellow;
+        margin-left: 30px ;
+        margin-top: 40px;
+    }
+    .overworldtierra_jpg_responsive{
+        position: absolute;
+        display: inline-block;
+        margin-top: 20px;
+        opacity: 0.6;
+        transition: 0.7s;
+    }
+    .overworldtierra_jpg:hover{
+        opacity: 1;
+    }
+    .overworldmar_responsive{
+        margin-top: 470px;
+    }
+    .overworldmar_h2_responsive{
+        display: block;
+      color: aqua;
+      font-size: 25px;
+      margin-bottom: 20px;
+      margin-left: 40px;
+    }
+    .overworldmar_jpg_responsive{
+        opacity: 0.6;
+        transition: 0.7s;
+    }
+    .overworldmar_jpg:hover{
+        opacity: 1;
+    }
+    .nether_responsive{
+        margin-top: 38px;
+    }
+    .nether_h2_responsive{
+        display: block;
+      color: red;
+      font-size: 25px;
+      margin-bottom: 20px;
+    margin-left: 80px;
+    }
+    .nether_jpg_responsive{
+        opacity: 0.6;
+        transition: 0.7s;
+    }
+    .nether_jpg:hover{
+        opacity: 1;
+    }
+    .end_h2_responsive{
+        display: block;
+        color: purple;
+        font-size: 25px;
+        margin-top: 40px;
+        margin-left: 90px;
+        margin-bottom: 20px;
+    }
+    .end_jpg_responsive{
+        opacity: 0.6;
+        transition: 0.7s;
+    }
+    .end_jpg:hover{
+        opacity: 1;
+    }
+}
+/*Footer escritorio*/
 footer{
+    margin-top: 100px;
     background-color: crimson;
+}
+.footer2{
     display: flex;
-    justify-content: start;
-}
-.cybergang{
-    display: block;
-    margin: 20px;
-    margin-left: 50px;
-}
-.discord{
-    display: block;
-    position: absolute;
-    color: black;
-    font-size: 25px;
-    left: 150px;
-    top: 766px;
-}
-.server{
-    margin: 20px;
-    margin-left: 420px;
-}
-.server2{
-    display:block;
-    position: absolute;
-    color: black;
-    font-size: 20px;
-    left: 680px;
-    top: 750px;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 .server3{
-    display:block;
     position: absolute;
-    color: black;
-    font-size: 20px;
-    left: 680px;
-    top: 780px;
+    margin-left: 380px;
+    margin-top: 40px;
 }
+.server2{
+    margin-right: 45px;
+    margin-top: 10px;
+}
+.discord{
+    margin-top: 25px;
+}
+.footer_responsive{
+    display: none;
+}
+/*Footer responsive*/
+@media screen and (max-width: 720px){
+    footer{
+        display: none;
+    }
+    .footer_responsive{
+        display: block;
+        margin-top: 200px;
+        background-color: crimson;
+    }
+    .footer2_responsive{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-evenly;
+    }
+    }
