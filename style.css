@@ -146,6 +146,9 @@ margin-left: 80px;
 .biomas_responsive{
     display: none;
 }
+.descripcion_responsive{
+    display: none;
+}
 /*Biomas responsive*/
 @media screen and (max-width: 720px){
     .biomas{
