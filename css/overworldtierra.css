@@ -1,0 +1,798 @@
+@charset "UTF-8";
+/*Colores*/
+/*Tipografía*/
+/*Display*/
+/*Flex*/
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: black; }
+
+/*nav escritorio*/
+.nav {
+  background-color: green;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .nav .nav_jpg {
+    height: 50px;
+    width: 50px; }
+  .nav h1 {
+    display: block;
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    left: 60px;
+    top: 8px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: initial; }
+  .nav h3 {
+    margin-top: 12px;
+    margin-right: 15px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    color: black; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.nav_responsive {
+  display: none; }
+
+/*nav responsive*/
+@media screen and (max-width: 720px) {
+  .nav {
+    display: none; }
+  .nav_responsive {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: green;
+    width: 100%; }
+    .nav_responsive-jpg {
+      height: 50px;
+      width: 50px; }
+    .nav_responsive h1 {
+      animation-name: aparecer-responsive;
+      animation-duration: 2s;
+      animation-iteration-count: initial;
+      margin-top: 8px;
+      margin-left: 5px; }
+  @keyframes aparecer-responsive {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } } }
+
+/*Mobs escritorio*/
+.mobs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 50px; }
+  .mobs .zombie .mobs_zombie-gif {
+    display: block;
+    margin-left: 50px;
+    margin-top: 10px;
+    height: 250px;
+    width: 150px; }
+  .mobs .zombie .mobs_zombie-subtitle {
+    display: block;
+    position: absolute;
+    color: green;
+    font-size: 30px;
+    margin-left: 75px;
+    margin-top: 10px; }
+  .mobs .zombie .mobs_zombie-texto1 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 55px; }
+  .mobs .zombie .mobs_zombie-texto2 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 80px; }
+  .mobs .zombie .mobs_zombie-texto3 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 130px; }
+  .mobs .zombie .mobs_zombie-texto4 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 160px; }
+  .mobs .zombie .mobs_zombie-texto5 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 180px; }
+  .mobs .zombie .mobs_zombie-texto6 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 200px; }
+  .mobs .zombie .mobs_zombie-texto7 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 220px; }
+
+.esqueleto .mobs_esqueleto-gif {
+  display: block;
+  margin-left: 80px;
+  height: 250px;
+  width: 150px; }
+
+.esqueleto .mobs_esqueleto-subtitle {
+  display: block;
+  position: absolute;
+  color: grey;
+  font-size: 30px;
+  margin-left: 110px;
+  margin-top: 8px; }
+
+.esqueleto .mobs_esqueleto-texto1 {
+  display: block;
+  position: absolute;
+  color: white;
+  font-size: 25px;
+  margin-left: 120px;
+  margin-top: 55px; }
+
+.esqueleto .mobs_esqueleto-texto2 {
+  display: block;
+  position: absolute;
+  color: white;
+  font-size: 25px;
+  margin-left: 120px;
+  margin-top: 80px; }
+
+.esqueleto .mobs_esqueleto-texto3 {
+  display: block;
+  position: absolute;
+  color: white;
+  font-size: 25px;
+  margin-left: 120px;
+  margin-top: 105px; }
+
+.esqueleto .mobs_esqueleto-texto4 {
+  display: block;
+  position: absolute;
+  color: greenyellow;
+  font-size: 20px;
+  margin-left: 110px;
+  margin-top: 155px; }
+
+.esqueleto .mobs_esqueleto-texto5 {
+  display: block;
+  position: absolute;
+  color: greenyellow;
+  font-size: 20px;
+  margin-left: 110px;
+  margin-top: 185px; }
+
+.creeper {
+  margin-right: 60px; }
+  .creeper .mobs_creeper-gif {
+    display: block;
+    margin-left: 130px;
+    height: 250px;
+    width: 150px; }
+  .creeper .mobs_creeper-subtitle {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 30px;
+    margin-left: 150px;
+    margin-top: 8px; }
+  .creeper .mobs_creeper-texto1 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 160px;
+    margin-top: 55px; }
+  .creeper .mobs_creeper-texto2 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 160px;
+    margin-top: 80px; }
+
+.araña .mobs_araña-jpg {
+  display: block;
+  margin-left: 10px;
+  height: 250px;
+  width: 150px; }
+
+.araña .mobs_araña-subtitle {
+  display: block;
+  position: absolute;
+  color: red;
+  font-size: 30px;
+  margin-left: 40px; }
+
+.araña .mobs_araña-texto1 {
+  display: block;
+  position: absolute;
+  color: white;
+  font-size: 25px;
+  margin-left: 30px;
+  margin-top: 55px; }
+
+.araña .mobs_araña-texto2 {
+  display: block;
+  position: absolute;
+  color: white;
+  font-size: 25px;
+  margin-left: 30px;
+  margin-top: 80px; }
+
+.araña .mobs_araña-texto3 {
+  display: block;
+  position: absolute;
+  color: white;
+  font-size: 25px;
+  margin-left: 30px;
+  margin-top: 105px; }
+
+.mobs2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 450px; }
+  .mobs2 .enderman .mobs2_enderman-gif {
+    display: block;
+    margin-left: 40px;
+    height: 250px;
+    width: 150px; }
+  .mobs2 .enderman .mobs2_enderman-subtitle {
+    display: block;
+    position: absolute;
+    color: purple;
+    font-size: 30px;
+    margin-left: 60px; }
+  .mobs2 .enderman .mobs2_enderman-texto1 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 70px;
+    margin-top: 45px; }
+  .mobs2 .enderman .mobs2_enderman-texto2 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 70px;
+    margin-top: 75px; }
+  .mobs2 .enderman .mobs2_enderman-texto3 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 125px; }
+  .mobs2 .enderman .mobs2_enderman-texto4 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 18px;
+    margin-left: 40px;
+    margin-top: 145px; }
+  .mobs2 .evocador .mobs2_evocador-jpg {
+    display: block;
+    height: 210px;
+    width: 150px; }
+  .mobs2 .evocador .mobs2_evocador-subtitle {
+    display: block;
+    position: absolute;
+    color: grey;
+    font-size: 30px;
+    margin-left: 30px;
+    margin-top: 35px; }
+  .mobs2 .evocador .mobs2_evocador-texto1 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 80px; }
+  .mobs2 .evocador .mobs2_evocador-texto2 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 110px; }
+  .mobs2 .evocador .mobs2_evocador-texto3 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 160px; }
+  .mobs2 .evocador .mobs2_evocador-texto4 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 180px; }
+  .mobs2 .saqueador .mobs2_saqueador-gif {
+    display: block;
+    height: 210px;
+    width: 130px; }
+  .mobs2 .saqueador .mobs2_saqueador-subtitle {
+    display: block;
+    position: absolute;
+    color: grey;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 30px; }
+  .mobs2 .saqueador .mobs2_saqueador-texto1 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 75px; }
+  .mobs2 .saqueador .mobs2_saqueador-texto2 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 40px;
+    margin-top: 105px; }
+  .mobs2 .saqueador .mobs2_saqueador-texto3 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 160px; }
+  .mobs2 .saqueador .mobs2_saqueador-texto4 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 180px; }
+  .mobs2 .warden .mobs2_warden-gif {
+    display: block;
+    height: 210px;
+    width: 150px; }
+  .mobs2 .warden .mobs2_warden-subtitle {
+    display: block;
+    position: absolute;
+    color: turquoise;
+    font-size: 30px;
+    margin-top: 30px; }
+  .mobs2 .warden .mobs2_warden-texto1 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 75px; }
+  .mobs2 .warden .mobs2_warden-texto2 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 10px;
+    margin-top: 105px; }
+
+.mobs_responsive {
+  display: none; }
+
+/*Mobs responsive*/
+@media screen and (max-width: 720px) {
+  .mobs {
+    display: none; }
+  .mobs2 {
+    display: none; }
+  .mobs_responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px; }
+    .mobs_responsive .zombie_responsive {
+      margin-bottom: 300px;
+      padding-right: 60px; }
+      .mobs_responsive .zombie_responsive .mobs_zombie_responsive-gif {
+        margin-left: 15px;
+        height: 250px;
+        width: 150px; }
+      .mobs_responsive .zombie_responsive .mobs_zombie_responsive-subtitle {
+        display: block;
+        position: absolute;
+        color: green;
+        font-size: 30px;
+        margin-left: 45px;
+        margin-top: 20px; }
+      .mobs_responsive .zombie_responsive .mobs_zombie_responsive-texto1 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 35px;
+        margin-top: 50px; }
+      .mobs_responsive .zombie_responsive .mobs_zombie_responsive-texto2 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 35px;
+        margin-top: 75px; }
+      .mobs_responsive .zombie_responsive .mobs_zombie_responsive-texto3 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 110px; }
+      .mobs_responsive .zombie_responsive .mobs_zombie_responsive-texto4 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 135px; }
+      .mobs_responsive .zombie_responsive .mobs_zombie_responsive-texto5 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 155px; }
+      .mobs_responsive .zombie_responsive .mobs_zombie_responsive-texto6 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 175px; }
+      .mobs_responsive .zombie_responsive .mobs_zombie_responsive-texto7 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 15px;
+        margin-top: 195px; }
+    .mobs_responsive .esqueleto_responsive {
+      margin-bottom: 300px;
+      padding-right: 160px; }
+      .mobs_responsive .esqueleto_responsive .mobs_esqueleto_responsive-gif {
+        display: block;
+        margin-left: 90px;
+        height: 250px;
+        width: 150px; }
+      .mobs_responsive .esqueleto_responsive .mobs_esqueleto_responsive-subtitle {
+        display: block;
+        position: absolute;
+        color: grey;
+        font-size: 30px;
+        margin-left: 110px;
+        margin-top: 8px; }
+      .mobs_responsive .esqueleto_responsive .mobs_esqueleto_responsive-texto1 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 120px;
+        margin-top: 55px; }
+      .mobs_responsive .esqueleto_responsive .mobs_esqueleto_responsive-texto2 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 120px;
+        margin-top: 80px; }
+      .mobs_responsive .esqueleto_responsive .mobs_esqueleto_responsive-texto3 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 120px;
+        margin-top: 105px; }
+      .mobs_responsive .esqueleto_responsive .mobs_esqueleto_responsive-texto4 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 110px;
+        margin-top: 155px; }
+      .mobs_responsive .esqueleto_responsive .mobs_esqueleto_responsive-texto5 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 110px;
+        margin-top: 180px; }
+    .mobs_responsive .creeper_responsive {
+      padding-right: 170px;
+      margin-bottom: 200px; }
+      .mobs_responsive .creeper_responsive .mobs_creeper_responsive-gif {
+        display: block;
+        margin-left: 130px;
+        height: 250px;
+        width: 150px; }
+      .mobs_responsive .creeper_responsive .mobs_creeper_responsive-subtitle {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 30px;
+        margin-left: 150px;
+        margin-top: 8px; }
+      .mobs_responsive .creeper_responsive .mobs_creeper_responsive-texto1 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 160px;
+        margin-top: 55px; }
+      .mobs_responsive .creeper_responsive .mobs_creeper_responsive-texto2 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 160px;
+        margin-top: 80px; }
+    .mobs_responsive .araña_responsive {
+      margin-bottom: 200px;
+      padding-right: 80px; }
+      .mobs_responsive .araña_responsive .mobs_araña_responsive-jpg {
+        display: block;
+        margin-left: 10px;
+        height: 250px;
+        width: 150px; }
+      .mobs_responsive .araña_responsive .mobs_araña_responsive-subtitle {
+        display: block;
+        position: absolute;
+        color: red;
+        font-size: 30px;
+        margin-left: 40px; }
+      .mobs_responsive .araña_responsive .mobs_araña_responsive-texto1 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 30px;
+        margin-top: 55px; }
+      .mobs_responsive .araña_responsive .mobs_araña_responsive-texto2 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 30px;
+        margin-top: 80px; }
+      .mobs_responsive .araña_responsive .mobs_araña_responsive-texto3 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 30px;
+        margin-top: 105px; }
+    .mobs_responsive .enderman_responsive {
+      margin-bottom: 300px;
+      padding-right: 110px; }
+      .mobs_responsive .enderman_responsive .mobs_enderman_responsive-gif {
+        display: block;
+        margin-left: 40px;
+        height: 250px;
+        width: 150px; }
+      .mobs_responsive .enderman_responsive .mobs_enderman_responsive-subtitle {
+        display: block;
+        position: absolute;
+        color: purple;
+        font-size: 30px;
+        margin-left: 60px; }
+      .mobs_responsive .enderman_responsive .mobs_enderman_responsive-texto1 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 70px;
+        margin-top: 45px; }
+      .mobs_responsive .enderman_responsive .mobs_enderman_responsive-texto2 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 70px;
+        margin-top: 75px; }
+      .mobs_responsive .enderman_responsive .mobs_enderman_responsive-texto3 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 125px; }
+      .mobs_responsive .enderman_responsive .mobs_enderman_responsive-texto4 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 18px;
+        margin-left: 40px;
+        margin-top: 145px; }
+    .mobs_responsive .evocador_responsive {
+      margin-bottom: 300px;
+      padding-right: 60px; }
+      .mobs_responsive .evocador_responsive .mobs_evocador_responsive-jpg {
+        display: block;
+        height: 210px;
+        width: 150px; }
+      .mobs_responsive .evocador_responsive .mobs_evocador_responsive-subtitle {
+        display: block;
+        position: absolute;
+        color: grey;
+        font-size: 30px;
+        margin-left: 30px;
+        margin-top: 35px; }
+      .mobs_responsive .evocador_responsive .mobs_evocador_responsive-texto1 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 40px;
+        margin-top: 80px; }
+      .mobs_responsive .evocador_responsive .mobs_evocador_responsive-texto2 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 110px; }
+      .mobs_responsive .evocador_responsive .mobs_evocador_responsive-texto3 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 160px; }
+      .mobs_responsive .evocador_responsive .mobs_evocador_responsive-texto4 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 180px; }
+    .mobs_responsive .saqueador_responsive {
+      margin-bottom: 300px;
+      padding-right: 90px; }
+      .mobs_responsive .saqueador_responsive .mobs_saqueador_responsive-gif {
+        display: block;
+        height: 210px;
+        width: 130px; }
+      .mobs_responsive .saqueador_responsive .mobs_saqueador_responsive-subtitle {
+        display: block;
+        position: absolute;
+        color: grey;
+        font-size: 30px;
+        margin-left: 40px;
+        margin-top: 30px; }
+      .mobs_responsive .saqueador_responsive .mobs_saqueador_responsive-texto1 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 40px;
+        margin-top: 75px; }
+      .mobs_responsive .saqueador_responsive .mobs_saqueador_responsive-texto2 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 40px;
+        margin-top: 105px; }
+      .mobs_responsive .saqueador_responsive .mobs_saqueador_responsive-texto3 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 160px; }
+      .mobs_responsive .saqueador_responsive .mobs_saqueador_responsive-texto4 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 180px; }
+    .mobs_responsive .warden_responsive .mobs_warden_responsive-gif {
+      display: block;
+      height: 210px;
+      width: 150px; }
+    .mobs_responsive .warden_responsive .mobs_warden_responsive-subtitle {
+      display: block;
+      position: absolute;
+      color: turquoise;
+      font-size: 30px;
+      margin-top: 30px; }
+    .mobs_responsive .warden_responsive .mobs_warden_responsive-texto1 {
+      display: block;
+      position: absolute;
+      color: white;
+      font-size: 25px;
+      margin-left: 5px;
+      margin-top: 75px; }
+    .mobs_responsive .warden_responsive .mobs_warden_responsive-texto2 {
+      display: block;
+      position: absolute;
+      color: white;
+      font-size: 25px;
+      margin-left: 5px;
+      margin-top: 105px; } }
+
+/*Footer escritorio*/
+footer {
+  margin-top: 500px;
+  background-color: crimson; }
+  footer .footer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    footer .footer2 .cybergang {
+      height: 80px;
+      width: 80px; }
+    footer .footer2 .server {
+      height: 80px;
+      width: 80px; }
+    footer .footer2 .server3 {
+      position: absolute;
+      margin-left: 380px;
+      margin-top: 40px; }
+    footer .footer2 .server2 {
+      margin-right: 45px;
+      margin-top: 10px; }
+    footer .footer2 .discord {
+      margin-top: 25px; }
+
+.footer_responsive {
+  display: none; }
+
+/*Footer responsive*/
+@media screen and (max-width: 720px) {
+  footer {
+    display: none; }
+  .footer_responsive {
+    display: block;
+    margin-top: 300px;
+    background-color: crimson; }
+    .footer_responsive .footer2_responsive {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly; }
+      .footer_responsive .footer2_responsive .cybergang_responsive {
+        height: 60px;
+        width: 60px; }
+      .footer_responsive .footer2_responsive .server_responsive {
+        height: 60px;
+        width: 60px; } }

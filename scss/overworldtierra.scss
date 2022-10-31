@@ -1,0 +1,938 @@
+@import "variables.scss";
+@import "mixins.scss";
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: $body_color;
+}
+/*nav escritorio*/
+.nav{
+    background-color: green;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .nav_jpg{
+        @include sizes(50px, 50px)
+    }
+
+    h1{
+        display: $display;
+      position: $position;
+      color: black;
+      font-size: 25px;
+      left: 60px;
+      top: 8px;
+      animation-name: aparecer;
+      animation-duration: 2s;
+      animation-iteration-count: initial;
+    }
+    h3{
+        margin-top: 12px;
+        margin-right: 15px;
+      animation-name: aparecer;
+      animation-duration: 2s;
+      animation-iteration-count: initial;
+      color:black
+    }
+    @keyframes aparecer {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+
+.nav_responsive{
+    display: none;
+}
+/*nav responsive*/
+@media screen and (max-width: 720px){
+    .nav{
+        display: none;
+    }
+    .nav_responsive{
+        display: $display_F;
+        flex-direction: row;
+        justify-content: start;
+        background-color: green;
+        width: 100%;
+
+        &-jpg{
+            @include sizes(50px, 50px)
+        }
+        h1{
+            animation-name: aparecer-responsive;
+          animation-duration: 2s;
+          animation-iteration-count: initial;
+          margin-top: 8px;
+          margin-left: 5px;
+        }
+        @keyframes aparecer-responsive {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+}
+/*Mobs escritorio*/
+.mobs{
+    display: $display_F;
+    flex-direction: $flex_R;
+    justify-content: space-between;
+    margin-right: 50px;
+
+    .zombie{
+        .mobs_zombie-gif{
+            display: $display;
+            margin-left: 50px;
+            margin-top: 10px;
+            @include sizes(150px,250px)
+        }
+        .mobs_zombie-subtitle{
+            display: $display;
+          position: $position;
+          color: green;
+          font-size: $mobs_titulo;
+          margin-left: 75px;
+          margin-top: 10px;
+        }
+        .mobs_zombie-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 80px;
+            margin-top: 55px;
+        }
+        .mobs_zombie-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 80px;
+            margin-top: 80px;
+        }
+        .mobs_zombie-texto3{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 60px;
+            margin-top: 130px;
+        }
+        .mobs_zombie-texto4{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 60px;
+            margin-top: 160px;
+        }
+        .mobs_zombie-texto5{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 60px;
+            margin-top: 180px;
+        }
+        .mobs_zombie-texto6{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 60px;
+            margin-top: 200px;
+        }
+        .mobs_zombie-texto7{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 60px;
+            margin-top: 220px;
+        }
+    }
+}
+.esqueleto{
+    .mobs_esqueleto-gif{
+        display: $display;
+        margin-left: 80px;
+        @include sizes(150px,250px)
+    }
+    .mobs_esqueleto-subtitle{
+        display: $display;
+        position: $position;
+        color: grey;
+        font-size: $mobs_titulo;
+        margin-left: 110px;
+        margin-top: 8px;
+    }
+    .mobs_esqueleto-texto1{
+        display: $display;
+        position: $position;
+        color: $color_W;
+        font-size: $mobs_subtitulo;
+        margin-left: 120px;
+        margin-top: 55px;
+    }
+    .mobs_esqueleto-texto2{
+        display: $display;
+        position: $position;
+        color: $color_W;
+        font-size: $mobs_subtitulo;
+        margin-left: 120px;
+        margin-top: 80px;
+    }
+    .mobs_esqueleto-texto3{
+        display: $display;
+        position: $position;
+        color: $color_W;
+        font-size: $mobs_subtitulo;
+        margin-left: 120px;
+        margin-top: 105px;
+    }
+    .mobs_esqueleto-texto4{
+        display: $display;
+        position: $position;
+        color: $color_G;
+        font-size: $mobs_probabilidad;
+        margin-left: 110px;
+        margin-top: 155px;
+    }
+    .mobs_esqueleto-texto5{
+        display: $display;
+        position: $position;
+        color: $color_G;
+        font-size: $mobs_probabilidad;
+        margin-left: 110px;
+        margin-top: 185px;
+    }
+}
+
+.creeper{
+    margin-right: 60px;
+
+    .mobs_creeper-gif{
+        display: $display;
+        margin-left: 130px;
+        @include sizes(150px,250px)
+    }
+    .mobs_creeper-subtitle{
+        display: $display;
+        position: $position;
+        color: greenyellow;
+        font-size: $mobs_titulo;
+        margin-left: 150px;
+        margin-top: 8px;
+    }
+    .mobs_creeper-texto1{
+        display: $display;
+        position: $position;
+        color: $color_W;
+        font-size: $mobs_subtitulo;
+        margin-left: 160px;
+        margin-top: 55px;
+    }
+    .mobs_creeper-texto2{
+        display: $display;
+        position: $position;
+        color: $color_W;
+        font-size: $mobs_subtitulo;
+        margin-left: 160px;
+        margin-top: 80px;
+    }
+}
+
+.araña{
+    .mobs_araña-jpg{
+        display: $display;
+        margin-left: 10px;
+        @include sizes(150px,250px)
+    }
+    .mobs_araña-subtitle{
+        display: $display;
+        position: $position;
+        color: red;
+        font-size: $mobs_titulo;
+        margin-left: 40px;
+    }
+    .mobs_araña-texto1{
+        display: $display;
+        position: $position;
+        color: $color_W;
+        font-size: $mobs_subtitulo;
+        margin-left: 30px;
+        margin-top: 55px;
+    }
+    .mobs_araña-texto2{
+        display: $display;
+        position: $position;
+        color: $color_W;
+        font-size: $mobs_subtitulo;
+        margin-left: 30px;
+        margin-top: 80px;
+    }
+    .mobs_araña-texto3{
+        display: $display;
+        position: $position;
+        color: $color_W;
+        font-size: $mobs_subtitulo;
+        margin-left: 30px;
+        margin-top: 105px;
+    }
+}
+
+.mobs2{
+    display: $display_F;
+    flex-direction: $flex_R;
+    justify-content: space-between;
+    margin-top: 450px;
+
+    .enderman{
+        .mobs2_enderman-gif{
+            display: $display;
+            margin-left: 40px;
+            @include sizes(150px,250px)
+        }
+        .mobs2_enderman-subtitle{
+            display: $display;
+          position: $position;
+          color: purple;
+          font-size: $mobs_titulo;
+          margin-left: 60px;
+        }
+        .mobs2_enderman-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 70px;
+            margin-top: 45px;
+        }
+        .mobs2_enderman-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 70px;
+            margin-top: 75px;
+        }
+        .mobs2_enderman-texto3{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 40px;
+            margin-top: 125px;
+        }
+        .mobs2_enderman-texto4{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: 18px;
+            margin-left: 40px;
+            margin-top: 145px;
+        }
+    }
+    .evocador{
+        .mobs2_evocador-jpg{
+            display: $display;
+            @include sizes(150px,210px)
+        }
+        .mobs2_evocador-subtitle{
+            display: $display;
+            position: $position;
+            color: grey;
+            font-size: $mobs_titulo;
+            margin-left: 30px;
+            margin-top: 35px;
+        }
+        .mobs2_evocador-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 40px;
+            margin-top: 80px;
+        }
+        .mobs2_evocador-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_probabilidad;
+            margin-left: 40px;
+            margin-top: 110px;
+        }
+        .mobs2_evocador-texto3{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 20px;
+            margin-top: 160px;
+        }
+        .mobs2_evocador-texto4{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 20px;
+            margin-top: 180px;
+        }
+    }
+    .saqueador{
+        .mobs2_saqueador-gif{
+            display: $display;
+            @include sizes(130px,210px)
+        }
+        .mobs2_saqueador-subtitle{
+            display: $display;
+            position: $position;
+            color: grey;
+            font-size: $mobs_titulo;
+            margin-left: 40px;
+            margin-top: 30px;
+        }
+        .mobs2_saqueador-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 40px;
+            margin-top: 75px;
+        }
+        .mobs2_saqueador-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 40px;
+            margin-top: 105px;
+        }
+        .mobs2_saqueador-texto3{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 20px;
+            margin-top: 160px;
+        }
+        .mobs2_saqueador-texto4{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 20px;
+            margin-top: 180px;
+        }
+    }
+    .warden{
+        .mobs2_warden-gif{
+            display: $display;
+            @include sizes(150px,210px)
+        }
+        .mobs2_warden-subtitle{
+            display: $display;
+                position: $position;
+                color: turquoise;
+                font-size: $mobs_titulo;
+                margin-top: 30px;
+        }
+        .mobs2_warden-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 10px;
+            margin-top: 75px;
+        }
+        .mobs2_warden-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 10px;
+            margin-top: 105px;
+        }
+    }
+}
+
+
+.mobs_responsive{
+    display: none;
+}
+/*Mobs responsive*/
+@media screen and (max-width: 720px){
+.mobs{
+    display: none;
+}
+.mobs2{
+    display: none;
+}
+.mobs_responsive{
+    display: $display_F;
+    flex-direction: $flex_C;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px;
+
+    .zombie_responsive{
+        margin-bottom: 300px;
+        padding-right: 60px;
+    
+        .mobs_zombie_responsive-gif{
+            margin-left: 15px;
+            @include sizes(150px,250px)
+        }
+        .mobs_zombie_responsive-subtitle{
+            display: $display;
+            position: $position;
+          color: green;
+          font-size: $mobs_titulo;
+          margin-left: 45px;
+          margin-top: 20px;
+        }
+        .mobs_zombie_responsive-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 35px;
+            margin-top: 50px;
+        }
+        .mobs_zombie_responsive-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 35px;
+            margin-top: 75px;
+        }
+        .mobs_zombie_responsive-texto3{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 15px;
+            margin-top: 110px;
+        }
+        .mobs_zombie_responsive-texto4{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 15px;
+            margin-top: 135px;
+        }
+        .mobs_zombie_responsive-texto5{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 15px;
+            margin-top: 155px;
+        }
+        .mobs_zombie_responsive-texto6{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 15px;
+            margin-top: 175px;
+        }
+        .mobs_zombie_responsive-texto7{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 15px;
+            margin-top: 195px;
+        }
+    }
+    
+    .esqueleto_responsive{
+        margin-bottom: 300px;
+        padding-right: 160px;
+    
+        .mobs_esqueleto_responsive-gif{
+            display: $display;
+            margin-left: 90px;
+            @include sizes(150px,250px)
+        }
+        .mobs_esqueleto_responsive-subtitle{
+            display: $display;
+            position: $position;
+            color: grey;
+            font-size: $mobs_titulo;
+            margin-left: 110px;
+            margin-top: 8px;
+        }
+        .mobs_esqueleto_responsive-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 120px;
+            margin-top: 55px;
+        }
+        .mobs_esqueleto_responsive-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 120px;
+            margin-top: 80px;
+        }
+        .mobs_esqueleto_responsive-texto3{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 120px;
+            margin-top: 105px;
+        }
+        .mobs_esqueleto_responsive-texto4{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 110px;
+            margin-top: 155px;
+        }
+        .mobs_esqueleto_responsive-texto5{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 110px;
+            margin-top: 180px;
+        }
+    }
+    
+    .creeper_responsive{
+        padding-right: 170px;
+        margin-bottom: 200px;
+    
+        .mobs_creeper_responsive-gif{
+            display: $display;
+            margin-left: 130px;
+            @include sizes(150px,250px)
+        }
+        .mobs_creeper_responsive-subtitle{
+            display: $display;
+            position: $position;
+            color: greenyellow;
+            font-size: $mobs_titulo;
+            margin-left: 150px;
+            margin-top: 8px;
+        }
+        .mobs_creeper_responsive-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 160px;
+            margin-top: 55px;
+        }
+        .mobs_creeper_responsive-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 160px;
+            margin-top: 80px;
+        }
+    }
+    
+    .araña_responsive{
+        margin-bottom: 200px;
+        padding-right: 80px;
+    
+        .mobs_araña_responsive-jpg{
+            display: $display;
+            margin-left: 10px;
+            @include sizes(150px,250px)
+        }
+        .mobs_araña_responsive-subtitle{
+            display: $display;
+            position: $position;
+            color: red;
+            font-size: $mobs_titulo;
+            margin-left: 40px;
+        }
+        .mobs_araña_responsive-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 30px;
+            margin-top: 55px;
+        }
+        .mobs_araña_responsive-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 30px;
+            margin-top: 80px;
+        }
+        .mobs_araña_responsive-texto3{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 30px;
+            margin-top: 105px;
+        }
+    }
+    
+    .enderman_responsive{
+        margin-bottom: 300px;
+        padding-right: 110px;
+    
+        .mobs_enderman_responsive-gif{
+            display: $display;
+            margin-left: 40px;
+            @include sizes(150px,250px)
+        }
+        .mobs_enderman_responsive-subtitle{
+            display: $display;
+          position: $position;
+          color: purple;
+          font-size: $mobs_titulo;
+          margin-left: 60px;
+        }
+        .mobs_enderman_responsive-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 70px;
+            margin-top: 45px;
+        }
+        .mobs_enderman_responsive-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 70px;
+            margin-top: 75px;
+        }
+        .mobs_enderman_responsive-texto3{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 40px;
+            margin-top: 125px;
+        }
+        .mobs_enderman_responsive-texto4{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: 18px;
+            margin-left: 40px;
+            margin-top: 145px;
+        }
+    }
+    
+    .evocador_responsive{
+        margin-bottom: 300px;
+        padding-right: 60px;
+    
+        .mobs_evocador_responsive-jpg{
+            display: $display;
+            @include sizes(150px,210px)
+        }
+        .mobs_evocador_responsive-subtitle{
+            display: $display;
+            position: $position;
+            color: grey;
+            font-size: $mobs_titulo;
+            margin-left: 30px;
+            margin-top: 35px;
+        }
+        .mobs_evocador_responsive-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 40px;
+            margin-top: 80px;
+        }
+        .mobs_evocador_responsive-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_probabilidad;
+            margin-left: 40px;
+            margin-top: 110px;
+        }
+        .mobs_evocador_responsive-texto3{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 20px;
+            margin-top: 160px;
+        }
+        .mobs_evocador_responsive-texto4{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 20px;
+            margin-top: 180px;
+        }
+    }
+    
+    .saqueador_responsive{
+        margin-bottom: 300px;
+        padding-right: 90px;
+    
+        .mobs_saqueador_responsive-gif{
+            display: $display;
+            @include sizes(130px,210px)
+        }
+        .mobs_saqueador_responsive-subtitle{
+            display: $display;
+            position: $position;
+            color: grey;
+            font-size: $mobs_titulo;
+            margin-left: 40px;
+            margin-top: 30px;
+        }
+        .mobs_saqueador_responsive-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 40px;
+            margin-top: 75px;
+        }
+        .mobs_saqueador_responsive-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 40px;
+            margin-top: 105px;
+        }
+        .mobs_saqueador_responsive-texto3{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 20px;
+            margin-top: 160px;
+        }
+        .mobs_saqueador_responsive-texto4{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 20px;
+            margin-top: 180px;
+        }
+    }
+    .warden_responsive{
+    
+        .mobs_warden_responsive-gif{
+            display: $display;
+            @include sizes(150px,210px)
+        }
+        .mobs_warden_responsive-subtitle{
+            display: $display;
+                position: $position;
+                color: turquoise;
+                font-size: $mobs_titulo;
+                margin-top: 30px;
+        }
+        .mobs_warden_responsive-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 5px;
+            margin-top: 75px;
+        }
+        .mobs_warden_responsive-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 5px;
+            margin-top: 105px;
+        }
+        }
+}
+}
+
+/*Footer escritorio*/
+footer{
+    margin-top: 500px;
+    background-color: crimson;
+
+    .footer2{
+        display: $display_F;
+        flex-direction: $flex_R;
+        justify-content: space-evenly;
+    
+        .cybergang{
+            @include sizes(80px, 80px)
+        }
+        .server{
+            @include sizes(80px, 80px)
+        }
+        .server3{
+            position: $position;
+            margin-left: 380px;
+            margin-top: 40px;
+        }
+        .server2{
+            margin-right: 45px;
+            margin-top: 10px;
+        }
+        .discord{
+            margin-top: 25px;
+        }
+    }
+}
+.footer_responsive{
+    display: none;
+}
+/*Footer responsive*/
+@media screen and (max-width: 720px){
+    footer{
+        display: none;
+    }
+    .footer_responsive{
+        display: $display;
+        margin-top: 300px;
+        background-color: crimson;
+
+        .footer2_responsive{
+            display: $display_F;
+            flex-direction: $flex_C;
+            align-items:center;
+            justify-content: space-evenly;
+    
+            .cybergang_responsive{
+                @include sizes(60px, 60px)
+            }
+            .server_responsive{
+                @include sizes(60px, 60px)
+            }
+        }
+    }
+
+}

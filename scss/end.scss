@@ -1,0 +1,324 @@
+@import "variables.scss";
+@import "mixins.scss";
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+background-color: $body_color;
+}
+/*nav escritorio*/
+.nav{
+    background-color: purple;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &_jpg{
+        @include sizes(50px, 50px);
+        }
+        h1{
+            display: $display;
+          position: $position;
+          color: black;
+          font-size: $mobs_subtitulo;
+          left: 60px;
+          top: 8px;
+          animation-name: aparecer;
+          animation-duration: 2s;
+          animation-iteration-count: initial;
+        }
+        h3{
+            margin-top: 12px;
+            margin-right: 15px;
+          animation-name: aparecer;
+          animation-duration: 2s;
+          animation-iteration-count: initial;
+          color:black
+        }
+        @keyframes aparecer {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+}
+
+.nav_responsive{
+    display: none;
+}
+/*nav responsive*/
+@media screen and (max-width: 720px){
+.nav{
+    display: none;
+}
+.nav_responsive{
+    display: $display_F;
+    flex-direction: row;
+    justify-content: start;
+    background-color: purple;
+    width: 100%;
+
+    &-jpg{
+        @include sizes(50px, 50px)
+    }
+    h1{
+        animation-name: aparecer-responsive;
+      animation-duration: 2s;
+      animation-iteration-count: initial;
+      margin-top: 8px;
+      margin-left: 5px;
+    }
+    @keyframes aparecer-responsive {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+    }
+}
+
+/*Mobs escritorio*/
+
+
+.mobs{
+    display: $display_F;
+    justify-content: start;
+
+    .enderman{
+        &-gif{
+            display:$display;
+            margin-left: 48px;
+            margin-top: $mobs_titulo;
+            @include sizes(150px,250px)
+        }
+        &-subtitle{
+            display:$display;
+          position: $position;
+          color: purple;
+          font-size: $mobs_titulo;
+          margin-left: 60px;
+          margin-top: 20px;
+        }
+        &-texto1{
+            display:$display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 85px;
+            margin-top: 70px;
+        }
+        &-texto2{
+            display:$display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 85px;
+            margin-top: 95px;
+        }
+        &-texto3{
+            display:$display;
+            position: $position;
+            color:$color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 60px;
+            margin-top: 145px;
+        }
+        &-texto4{
+            display: $display;
+            position: $position;
+            color:$color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 60px;
+            margin-top: 175px;
+        }
+    }
+
+    .enderdragon{
+        margin-top: 290px;
+    
+        .mobs_enderdragon-gif{
+            margin-left: 420px;
+            margin-top: -260px;
+            @include sizes(150px,250px)
+        }
+        .enderdragon-subtitle{
+            display:$display;
+          position: $position;
+          color: purple;
+          font-size: $mobs_titulo;
+          margin-left: 390px;
+          margin-top: 10px;
+        }
+        .mobs_enderdragon-texto1{
+            display:$display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 430px;
+            margin-top: 60px;
+        }
+        .mobs_enderdragon-texto2{
+            display:$display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 430px;
+            margin-top: 85px;
+        }
+    }
+}
+
+.mobs_responsive{
+    display: none;
+}
+/*Mobs responsive*/
+@media screen and (max-width: 720px){
+.mobs{
+    display: none;
+}
+.mobs_responsive{
+    display: $display_F;
+    flex-direction: $flex_C;
+    align-items: center;
+    width: 100%;
+    margin-top: $mobs_subtitulo;
+
+    .enderman_responsive{
+        .enderman_responsive-gif{
+            @include sizes(150px,250px)
+        }
+        .enderman_responsive-subtitle{
+            display:$display;
+          position: $position;
+          color: purple;
+          font-size: $mobs_titulo;
+          margin-left: 20px;
+        }
+        .enderman_responsive-texto1{
+            display:$display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 20px;
+            margin-top: 35px;
+        }
+        .enderman_responsive-texto2{
+            display:$display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 20px;
+            margin-top: 60px;
+        }
+        .enderman_responsive-texto3{
+            display:$display;
+            position: $position;
+            color:$color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 10px;
+            margin-top: 95px;
+        }
+        .enderman_responsive-texto4{
+            display: $display;
+            color:$color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 10px;
+            margin-top: 120px;
+        }
+    }
+    
+    .enderdragon_responsive{
+        margin-right: 70px;
+    
+        .mobs_enderdragon_responsive-gif{
+            margin-top: 120px;
+            @include sizes(150px,250px)
+        }
+        .enderdragon_responsive-subtitle{
+            display:$display;
+          position: $position;
+          color: purple;
+          font-size: $mobs_titulo;
+        }
+        .mobs_enderdragon_responsive-texto1{
+            display:$display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-top: 35px;
+        }
+        .mobs_enderdragon_responsive-texto2{
+            display:$display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-top: 60px;
+        }
+        }
+    }
+}
+
+
+/*Footer escritorio*/
+footer{
+    margin-top: 500px;
+    background-color: $footer_color;
+
+    .footer2{
+        display: $display_F;
+        flex-direction: $flex_R;
+        justify-content: space-evenly;
+    
+        .cybergang{
+            @include sizes(80px, 80px)
+        }
+        .server{
+            @include sizes(80px, 80px)
+        }
+        .server3{
+            position: $position;
+            margin-left: 380px;
+            margin-top: 40px;
+        }
+        .server2{
+            margin-right: 65px;
+            margin-top: 10px;
+        }
+        .discord{
+            margin-top: $mobs_subtitulo;
+        }
+    }
+}
+.footer_responsive{
+    display: none;
+}
+/*Footer responsive*/
+@media screen and (max-width: 720px){
+footer{
+    display: none;
+}
+.footer_responsive{
+    display: $display;
+    margin-top: 300px;
+    background-color: $footer_color;
+
+    .footer2_responsive{
+        display: $display_F;
+        flex-direction: $flex_C;
+        align-items:center;
+        justify-content: space-evenly;
+    
+        .cybergang_responsive{
+            @include sizes(60px, 60px)
+        }
+        .server_responsive{
+            @include sizes(60px, 60px)
+        }
+        }
+    }
+}

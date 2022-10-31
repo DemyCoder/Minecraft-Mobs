@@ -1,0 +1,283 @@
+@charset "UTF-8";
+/*Colores*/
+/*Tipografía*/
+/*Display*/
+/*Flex*/
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: black; }
+
+/*nav escritorio*/
+.nav {
+  background-color: green; }
+  .nav_jpg {
+    height: 50px;
+    width: 50px; }
+  .nav h1 {
+    display: block;
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    left: 60px;
+    top: 8px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: initial; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.nav_responsive {
+  display: none; }
+
+/*nav responsive*/
+@media screen and (max-width: 720px) {
+  .nav {
+    display: none; }
+  .nav_responsive {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: green;
+    width: 100%; }
+    .nav_responsive-jpg {
+      height: 50px;
+      width: 50px; }
+    .nav_responsive h1 {
+      animation-name: aparecer-responsive;
+      animation-duration: 2s;
+      animation-iteration-count: initial;
+      font-size: 20px;
+      margin-top: 8px;
+      margin-left: 5px; }
+  @keyframes aparecer-responsive {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } } }
+
+.biomas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 30px; }
+  .biomas .overworldtierra_h2 {
+    color: greenyellow;
+    margin-left: 30px;
+    margin-top: 40px; }
+  .biomas .overworldtierra_jpg {
+    position: absolute;
+    display: block;
+    margin-top: 20px;
+    opacity: 0.6;
+    transition: 0.7s;
+    height: 400px;
+    width: 250px; }
+  .biomas .overworldtierra_jpg:hover {
+    opacity: 1; }
+  .biomas .overworldmar {
+    margin-top: 38px;
+    margin-left: 30px; }
+    .biomas .overworldmar_h2 {
+      display: block;
+      color: aqua;
+      font-size: 25px;
+      margin-bottom: 20px;
+      margin-left: 40px; }
+    .biomas .overworldmar_jpg {
+      opacity: 0.6;
+      transition: 0.7s;
+      height: 400px;
+      width: 250px; }
+    .biomas .overworldmar_jpg:hover {
+      opacity: 1; }
+  .biomas .nether {
+    margin-top: 38px; }
+    .biomas .nether_h2 {
+      display: block;
+      color: red;
+      font-size: 25px;
+      margin-bottom: 20px;
+      margin-left: 80px; }
+    .biomas .nether_jpg {
+      opacity: 0.6;
+      transition: 0.7s;
+      height: 400px;
+      width: 250px; }
+    .biomas .nether_jpg:hover {
+      opacity: 1; }
+  .biomas .end_h2 {
+    display: block;
+    color: purple;
+    font-size: 25px;
+    margin-top: 40px;
+    margin-left: 90px;
+    margin-bottom: 20px; }
+  .biomas .end_jpg {
+    opacity: 0.6;
+    transition: 0.7s;
+    height: 400px;
+    width: 250px; }
+  .biomas .end_jpg:hover {
+    opacity: 1; }
+
+.descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 40px; }
+  .descripcion_subtitle {
+    color: blue;
+    margin-left: 30px; }
+  .descripcion_texto {
+    color: white;
+    margin-top: 20px;
+    margin-left: 30px;
+    font-size: 20px;
+    margin-bottom: 70px; }
+
+.biomas_responsive {
+  display: none; }
+
+.descripcion_responsive {
+  display: none; }
+
+/*Biomas responsive*/
+@media screen and (max-width: 720px) {
+  .biomas {
+    display: none; }
+  .descripcion {
+    display: none; }
+  .descripcion_responsive {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 40px; }
+    .descripcion_responsive .descripcion_subtitle_responsive {
+      color: blue;
+      margin-left: 30px; }
+    .descripcion_responsive .descripcion_texto_responsive {
+      color: white;
+      margin-top: 20px;
+      margin-left: 30px;
+      font-size: 20px;
+      margin-bottom: 70px; }
+  .biomas_responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px; }
+    .biomas_responsive .overworldtierra_responsive {
+      margin-right: 30px; }
+      .biomas_responsive .overworldtierra_responsive .overworldtierra_h2_responsive {
+        color: greenyellow;
+        margin-left: 30px;
+        margin-top: 40px; }
+      .biomas_responsive .overworldtierra_responsive .overworldtierra_jpg_responsive {
+        position: absolute;
+        display: block;
+        margin-top: 20px;
+        opacity: 0.6;
+        transition: 0.7s;
+        height: 400px;
+        width: 250px; }
+      .biomas_responsive .overworldtierra_responsive .overworldtierra_jpg:hover {
+        opacity: 1; }
+    .biomas_responsive .overworldmar_responsive {
+      margin-top: 470px; }
+      .biomas_responsive .overworldmar_responsive .overworldmar_h2_responsive {
+        display: block;
+        color: aqua;
+        font-size: 25px;
+        margin-bottom: 20px;
+        margin-left: 40px; }
+      .biomas_responsive .overworldmar_responsive .overworldmar_jpg_responsive {
+        opacity: 0.6;
+        transition: 0.7s;
+        height: 400px;
+        width: 250px; }
+      .biomas_responsive .overworldmar_responsive .overworldmar_jpg:hover {
+        opacity: 1; }
+    .biomas_responsive .nether_responsive {
+      margin-top: 38px; }
+      .biomas_responsive .nether_responsive .nether_h2_responsive {
+        display: block;
+        color: red;
+        font-size: 25px;
+        margin-bottom: 20px;
+        margin-left: 80px; }
+      .biomas_responsive .nether_responsive .nether_jpg_responsive {
+        opacity: 0.6;
+        transition: 0.7s;
+        height: 400px;
+        width: 250px; }
+      .biomas_responsive .nether_responsive .nether_jpg:hover {
+        opacity: 1; }
+    .biomas_responsive .end_responsive .end_h2_responsive {
+      display: block;
+      color: purple;
+      font-size: 25px;
+      margin-top: 40px;
+      margin-left: 90px;
+      margin-bottom: 20px; }
+    .biomas_responsive .end_responsive .end_jpg_responsive {
+      opacity: 0.6;
+      transition: 0.7s;
+      height: 400px;
+      width: 250px; }
+    .biomas_responsive .end_responsive .end_jpg:hover {
+      opacity: 1; } }
+
+/*Footer escritorio*/
+footer {
+  margin-top: 100px;
+  background-color: crimson; }
+  footer .footer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    footer .footer2 .server {
+      height: 80px;
+      width: 80px; }
+    footer .footer2 .server3 {
+      position: absolute;
+      margin-left: 380px;
+      margin-top: 40px; }
+    footer .footer2 .server2 {
+      margin-right: 45px;
+      margin-top: 10px; }
+    footer .footer2 .discord {
+      margin-top: 25px; }
+    footer .footer2 .cybergang {
+      height: 80px;
+      width: 80px; }
+
+.footer_responsive {
+  display: none; }
+
+/*Footer responsive*/
+@media screen and (max-width: 720px) {
+  footer {
+    display: none; }
+  .footer_responsive {
+    display: block;
+    margin-top: 200px;
+    background-color: crimson; }
+    .footer_responsive .footer2_responsive {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly; }
+      .footer_responsive .footer2_responsive .cybergang_responsive {
+        height: 60px;
+        width: 60px; }
+      .footer_responsive .footer2_responsive .server_responsive {
+        height: 60px;
+        width: 60px; } }

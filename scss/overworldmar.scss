@@ -1,0 +1,551 @@
+@import "variables.scss";
+@import "mixins.scss";
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+background-color: $body_color;
+}
+/*nav escritorio*/
+.nav{
+    background-color: aqua;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .nav_jpg{
+        @include sizes(50px, 50px)
+    }
+    h1{
+        display: $display;
+      position: absolute;
+      color: black;
+      font-size: 25px;
+      left: 60px;
+      top: 8px;
+      animation-name: aparecer;
+      animation-duration: 2s;
+      animation-iteration-count: initial;
+    }
+    h3{
+        margin-top: 12px;
+        margin-right: 15px;
+      animation-name: aparecer;
+      animation-duration: 2s;
+      animation-iteration-count: initial;
+      color: black;
+    }
+    @keyframes aparecer {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+.nav_responsive{
+    display: none;
+}
+/*nav responsive*/
+@media screen and (max-width: 720px){
+.nav{
+    display: none;
+}
+.nav_responsive{
+    display: $display_F;
+    flex-direction: row;
+    justify-content: start;
+    background-color: aqua;
+    width: 100%;
+
+    &-jpg{
+        @include sizes(50px, 50px)
+    }
+    h1{
+        animation-name: aparecer-responsive;
+      animation-duration: 2s;
+      animation-iteration-count: initial;
+      margin-top: 8px;
+      margin-left: 5px;
+    }
+    @keyframes aparecer-responsive {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+    }
+}
+}
+/*Mobs escritorio*/
+.mobs{
+    display: $display_F;
+    justify-content: start;
+
+    .ahogado{
+        .mobs_ahogado-jpg{
+            display: $display;
+            margin-left: 88px;
+            margin-top: 30px;
+            @include sizes(150px,250px)
+        }
+        .mobs_ahogado-subtitle{
+            display: $display;
+          position: $position;
+          color: lightseagreen;
+          font-size: $mobs_titulo;
+          margin-left: 100px;
+          margin-top: 20px;
+        }
+        .mobs_ahogado-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 85px;
+            margin-top: 70px;
+        }
+        .mobs_ahogado-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 85px;
+            margin-top: 95px;
+        }
+        .mobs_ahogado-texto3{
+            display: $display;
+            position: $position;
+            color:$color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 60px;
+            margin-top: 145px;
+        }
+        .mobs_ahogado-texto4{
+            display: $display;
+            position: $position;
+            color:$color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 60px;
+            margin-top: 175px;
+        }
+        .mobs_ahogado-texto5{
+            display: $display;
+            position: $position;
+            color:$color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 60px;
+            margin-top: 195px;
+        }
+        .mobs_ahogado-texto6{
+            display: $display;
+            position: $position;
+            color:$color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 60px;
+            margin-top: 215px;
+        }
+    }
+    
+    .guardian{
+        display: $display;
+        margin-left: 60px;
+    
+        .mobs_guardian-gif{
+            display: $display;
+            margin-left: 88px;
+            margin-top: 30px;
+            @include sizes(200px,250px)
+        }
+        .mobs_guardian-subtitle{
+            display: $display;
+            position: $position;
+            color: aquamarine;
+            font-size: $mobs_titulo;
+            margin-left: 100px;
+            margin-top: 20px;
+        }
+        .mobs_guardian-texto1{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 85px;
+            margin-top: 70px;
+        }
+        .mobs_guardian-texto2{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 85px;
+            margin-top: 100px;
+        }
+        .mobs_guardian-texto3{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 85px;
+            margin-top: 120px;
+        }
+        .mobs_guardian-texto4{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 85px;
+            margin-top: 140px;
+        }
+    }
+    
+    
+    .guardian_anciano{
+        display: $display;
+        margin-left: 60px;
+    
+        .mobs_guardiananciano-gif{
+            display: $display;
+            margin-left: 110px;
+            margin-top: 30px;
+            @include sizes(200px,250px)
+        }
+        .mobs_guardiananciano-subtitle{
+            display: $display;
+            position: $position;
+            color: grey;
+            font-size: $mobs_titulo;
+            margin-left: 80px;
+            margin-top: 20px;
+        }
+        .mobs_guardiananciano-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 85px;
+            margin-top: 70px;
+        }
+        .mobs_guardiananciano-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 85px;
+            margin-top: 95px;
+        }
+    }
+}
+
+.mobs_responsive{
+    display: none;
+}
+/*Mobs responsive*/
+@media screen and (max-width: 720px){
+.mobs{
+    display: none;
+}
+.mobs_responsive{
+    display: $display_F;
+    flex-direction: $flex_C;
+    align-items:center;
+    width: 100%;
+    margin-top: 25px;
+
+    .ahogado_responsive{
+        margin-bottom: 200px;
+        padding-right: 60px;
+    
+        .mobs_ahogado_responsive-jpg{
+            @include sizes(150px,250px)
+        }
+        .mobs_ahogado_responsive-subtitle{
+            display: $display;
+            position: $position;
+          color: lightseagreen;
+          font-size: $mobs_titulo;
+          margin-left: 45px;
+          margin-top: 20px;
+        }
+        .mobs_ahogado_responsive-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 35px;
+            margin-top: 50px;
+        }
+        .mobs_ahogado_responsive-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 35px;
+            margin-top: 75px;
+        }
+        .mobs_ahogado_responsive-texto3{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 15px;
+            margin-top: 110px;
+        }
+        .mobs_ahogado_responsive-texto4{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 15px;
+            margin-top: 135px;
+        }
+        .mobs_ahogado_responsive-texto5{
+            display: $display;
+            position: $position;
+            color:$color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 15px;
+            margin-top: 155px;
+        }
+        .mobs_ahogado_responsive-texto6{
+            display: $display;
+            position: $position;
+            color:$color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 15px;
+            margin-top: 175px;
+        }
+    }
+    
+    .guardian_responsive{
+        margin-bottom: 200px;
+    
+        .mobs_guardian_responsive-gif{
+            margin-left: 40px;
+            @include sizes(200px,250px)
+        }
+        .mobs_guardian_responsive-subtitle{
+            display: $display;
+            position: $position;
+            color: aquamarine;
+            font-size: $mobs_titulo;
+            margin-left: 50px;
+            margin-top: 20px;
+        }
+        .mobs_guardian_responsive-texto1{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 30px;
+            margin-top: 60px;
+        }
+        .mobs_guardian_responsive-texto2{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 30px;
+            margin-top: 80px;
+        }
+        .mobs_guardian_responsive-texto3{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 30px;
+            margin-top: 100px;
+        }
+        .mobs_guardian_responsive-texto4{
+            display: $display;
+            position: $position;
+            color: $color_G;
+            font-size: $mobs_probabilidad;
+            margin-left: 30px;
+            margin-top: 120px;
+        }
+    }
+    
+    .guardian_anciano_responsive{
+        
+        .mobs_guardiananciano_responsive-gif{
+            @include sizes(200px,250px)
+        }
+        .mobs_guardiananciano_responsive-subtitle{
+            display: $display;
+            position: $position;
+            color: grey;
+            font-size: $mobs_titulo;
+            margin-left: 30px;
+            margin-top: 20px;
+        }
+        .mobs_guardiananciano_responsive-texto1{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 30px;
+            margin-top: 90px;
+        }
+        .mobs_guardiananciano_responsive-texto2{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 30px;
+            margin-top: 115px;
+        }
+        }
+    }
+}
+
+
+/*Estructuras escritorio*/
+.estructuras{
+    display: $display_F;
+    justify-content: start;
+
+    .ruinas{
+        .estructuras_ruinas-jpg{
+            display: $display;
+            margin-left: 50px;
+            margin-top: 320px;
+            @include sizes(450px,300px)
+        }
+        .estructuras_ruinas-subtitle{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 117px;
+            margin-top: 45px;
+        }
+    }
+    
+    .templo{
+        display: $display;
+        margin-left: 40px;
+        margin-top: 320px;
+    
+        .estructuras_templo-jpg{
+            @include sizes(450px,300px)
+        }
+        .estructuras_templo-subtitle{
+            display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 90px;
+            margin-top: 45px;
+        }
+    }
+}
+.estructuras_responsive{
+    display:none;
+}
+/*Estructuras responsive*/
+@media screen and (max-width: 720px){
+    .estructuras{
+        display: none;
+    }
+    .estructuras_responsive{
+        display: $display_F;
+        flex-direction: $flex_C;
+        align-items:flex-start;
+        margin-top: 200px;
+        padding-left: 15px;
+
+        .ruinas_responsive{
+            .estructuras_ruinas_responsive-jpg{
+                padding-bottom: 100px;
+                @include sizes(250px,100px)
+            }
+            .estructuras_ruinas_responsive-subtitle{
+                display: $display;
+            position: $position;
+            color: $color_W;
+            font-size: $mobs_subtitulo;
+            margin-left: 50px;
+            margin-top: -85px;
+            }
+        }
+
+        .templo_responsive{
+            .estructuras_templo_responsive-jpg{
+                @include sizes(250px,100px)
+            }
+            .estructuras_templo_responsive-subtitle{
+                display: $display;
+                position: $position;
+                color: $color_W;
+                font-size: $mobs_subtitulo;
+                margin-left: 50px;
+                margin-top: 30px;
+            }
+        }
+    }
+}
+
+    
+/*Footer escritorio*/
+footer{
+    margin-top: 500px;
+    background-color: $footer_color;
+
+    .footer2{
+        display: $display_F;
+        flex-direction: $flex_R;
+        justify-content: space-evenly;
+    
+        .cybergang{
+            @include sizes(80px, 80px)
+        }
+        .server{
+            @include sizes(80px, 80px)
+        }
+        .server3{
+            position: $position;
+            margin-left: 380px;
+            margin-top: 40px;
+        }
+        .server2{
+            margin-right: 45px;
+            margin-top: 10px;
+        }
+        .discord{
+            margin-top: 25px;
+        }
+    }
+}
+
+.footer_responsive{
+    display: none;
+}
+/*Footer responsive*/
+@media screen and (max-width: 720px){
+    footer{
+        display: none;
+    }
+    .footer_responsive{
+        display: $display;
+        margin-top: 300px;
+        background-color: $footer_color;
+
+        .footer2_responsive{
+            display: $display_F;
+            flex-direction: $flex_C;
+            align-items:center;
+            justify-content: space-evenly;
+    
+            .cybergang_responsive{
+                @include sizes(60px, 60px)
+            }
+            .server_responsive{
+                @include sizes(60px, 60px)
+            }
+            }
+        }
+    }

@@ -1,0 +1,563 @@
+@charset "UTF-8";
+/*Colores*/
+/*Tipografía*/
+/*Display*/
+/*Flex*/
+* {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: black; }
+
+/*nav escritorio*/
+.nav {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .nav_jpg {
+    height: 50px;
+    width: 50px; }
+  .nav h1 {
+    display: block;
+    position: absolute;
+    color: black;
+    font-size: 25px;
+    left: 60px;
+    top: 8px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: initial; }
+  .nav h3 {
+    margin-top: 12px;
+    margin-right: 15px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    animation-iteration-count: initial;
+    color: black; }
+
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.nav_responsive {
+  display: none; }
+
+/*nav responsive*/
+@media screen and (max-width: 720px) {
+  .nav {
+    display: none; }
+  .nav_responsive {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    background-color: crimson;
+    width: 100%; }
+    .nav_responsive-jpg {
+      height: 50px;
+      width: 50px; }
+    .nav_responsive h1 {
+      animation-name: aparecer-responsive;
+      animation-duration: 2s;
+      animation-iteration-count: initial;
+      margin-top: 8px;
+      margin-left: 5px; }
+  @keyframes aparecer-responsive {
+    0% {
+      opacity: 0; }
+    100% {
+      opacity: 1; } } }
+
+/*Mobs escritorio*/
+.mobs {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+  margin-top: 50px; }
+  .mobs .cerdozombie .mobs_cerdozombie-gif {
+    display: block;
+    height: 250px;
+    width: 150px; }
+  .mobs .cerdozombie .mobs_cerdozombie-subtitle {
+    display: block;
+    position: absolute;
+    color: pink;
+    font-size: 30px;
+    margin-top: 20px; }
+  .mobs .cerdozombie .mobs_cerdozombie-texto1 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-top: 55px; }
+  .mobs .cerdozombie .mobs_cerdozombie-texto2 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-top: 80px; }
+  .mobs .cerdozombie .mobs_cerdozombie-texto3 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-top: 130px; }
+  .mobs .cerdozombie .mobs_cerdozombie-texto4 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-top: 160px; }
+  .mobs .cerdozombie .mobs_cerdozombie-texto5 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-top: 180px; }
+  .mobs .cerdozombie .mobs_cerdozombie-texto6 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-top: 200px; }
+  .mobs .piglin .mobs_piglin-gif {
+    display: block;
+    height: 250px;
+    width: 150px; }
+  .mobs .piglin .mobs_piglin-subtitle {
+    display: block;
+    position: absolute;
+    color: pink;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-left: 80px; }
+  .mobs .piglin .mobs_piglin-texto1 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 45px;
+    margin-top: 60px; }
+  .mobs .piglin .mobs_piglin-texto2 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 45px;
+    margin-top: 85px; }
+  .mobs .piglin .mobs_piglin-texto3 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 45px;
+    margin-top: 105px; }
+  .mobs .blaze .mobs_blaze-gif {
+    display: block;
+    margin-left: 60px;
+    height: 250px;
+    width: 150px; }
+  .mobs .blaze .mobs_blaze-subtitle {
+    display: block;
+    position: absolute;
+    color: orange;
+    font-size: 30px;
+    margin-left: 100px;
+    margin-top: 8px; }
+  .mobs .blaze .mobs_blaze-texto1 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 55px; }
+  .mobs .blaze .mobs_blaze-texto2 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 80px; }
+  .mobs .esqueletowither .mobs_esqueletowither-jpg {
+    display: block;
+    margin-left: 60px;
+    height: 250px;
+    width: 150px; }
+  .mobs .esqueletowither .mobs_esqueletowither-subtitle {
+    display: block;
+    position: absolute;
+    color: grey;
+    font-size: 30px;
+    margin-left: 40px;
+    margin-top: 8px; }
+  .mobs .esqueletowither .mobs_esqueletowither-texto1 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 55px; }
+  .mobs .esqueletowither .mobs_esqueletowither-texto2 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 80px; }
+  .mobs .esqueletowither .mobs_esqueletowither-texto3 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 105px; }
+  .mobs .esqueletowither .mobs_esqueletowither-texto4 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 150px; }
+  .mobs .esqueletowither .mobs_esqueletowither-texto5 {
+    display: block;
+    position: absolute;
+    color: greenyellow;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 180px; }
+
+.mobs2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 300px; }
+  .mobs2 .cubodemagma .mobs2_cubodemagma-gif {
+    display: block;
+    margin-left: 20px;
+    height: 300px;
+    width: 150px; }
+  .mobs2 .cubodemagma .mobs2_cubodemagma-subtitle {
+    display: block;
+    position: absolute;
+    color: red;
+    font-size: 30px;
+    margin-right: 60px;
+    margin-top: 20px; }
+  .mobs2 .cubodemagma .mobs2_cubodemagma-texto1 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 105px; }
+  .mobs2 .cubodemagma .mobs2_cubodemagma-texto2 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-right: 20px;
+    margin-top: 130px; }
+  .mobs2 .ghast .mobs2_ghast-gif {
+    display: block;
+    margin-left: 60px;
+    height: 300px;
+    width: 150px; }
+  .mobs2 .ghast .mobs2_ghast-subtitle {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    margin-left: 90px;
+    margin-top: 60px; }
+  .mobs2 .ghast .mobs2_ghast-texto1 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 105px; }
+  .mobs2 .ghast .mobs2_ghast-texto2 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 130px; }
+  .mobs2 .ghast .mobs2_ghast-texto3 {
+    display: block;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    margin-left: 80px;
+    margin-top: 150px; }
+
+.mobs_responsive {
+  display: none; }
+
+.mobs2_responsive {
+  display: none; }
+
+/*Mobs responsive*/
+@media screen and (max-width: 720px) {
+  .mobs {
+    display: none; }
+  .mobs2 {
+    display: none; }
+  .mobs_responsive {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 25px; }
+    .mobs_responsive .cerdozombie_responsive {
+      margin-bottom: 300px;
+      padding-right: 60px; }
+      .mobs_responsive .cerdozombie_responsive .mobs_cerdozombie_responsive-jpg {
+        height: 250px;
+        width: 150px; }
+      .mobs_responsive .cerdozombie_responsive .mobs_cerdozombie_responsive-subtitle {
+        display: block;
+        position: absolute;
+        color: pink;
+        font-size: 30px;
+        margin-top: 20px; }
+      .mobs_responsive .cerdozombie_responsive .mobs_cerdozombie_responsive-texto1 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-top: 50px; }
+      .mobs_responsive .cerdozombie_responsive .mobs_cerdozombie_responsive-texto2 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-top: 75px; }
+      .mobs_responsive .cerdozombie_responsive .mobs_cerdozombie_responsive-texto3 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 5px;
+        margin-top: 110px; }
+      .mobs_responsive .cerdozombie_responsive .mobs_cerdozombie_responsive-texto4 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 5px;
+        margin-top: 135px; }
+      .mobs_responsive .cerdozombie_responsive .mobs_cerdozombie_responsive-texto5 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 5px;
+        margin-top: 155px; }
+      .mobs_responsive .cerdozombie_responsive .mobs_cerdozombie_responsive-texto6 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 5px;
+        margin-top: 175px; }
+    .mobs_responsive .piglin_responsive {
+      margin-bottom: 250px;
+      padding-right: 120px; }
+      .mobs_responsive .piglin_responsive .mobs_piglin_responsive-gif {
+        height: 250px;
+        width: 150px; }
+      .mobs_responsive .piglin_responsive .mobs_piglin_responsive-subtitle {
+        display: block;
+        position: absolute;
+        color: pink;
+        font-size: 30px;
+        margin-left: 70px;
+        margin-top: 20px; }
+      .mobs_responsive .piglin_responsive .mobs_piglin_responsive-texto1 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 60px; }
+      .mobs_responsive .piglin_responsive .mobs_piglin_responsive-texto2 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 80px; }
+      .mobs_responsive .piglin_responsive .mobs_piglin_responsive-texto3 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 40px;
+        margin-top: 100px; }
+    .mobs_responsive .blaze_responsive {
+      margin-bottom: 300px;
+      padding-right: 60px; }
+      .mobs_responsive .blaze_responsive .mobs_blaze_responsive-gif {
+        height: 250px;
+        width: 150px; }
+      .mobs_responsive .blaze_responsive .mobs_blaze_responsive-subtitle {
+        display: block;
+        position: absolute;
+        color: orange;
+        font-size: 30px;
+        margin-left: 40px;
+        margin-top: 20px; }
+      .mobs_responsive .blaze_responsive .mobs_blaze_responsive-texto1 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 15px;
+        margin-top: 70px; }
+      .mobs_responsive .blaze_responsive .mobs_blaze_responsive-texto2 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-left: 15px;
+        margin-top: 95px; }
+    .mobs_responsive .esqueletowither_responsive {
+      margin-bottom: 250px;
+      padding-right: 120px; }
+      .mobs_responsive .esqueletowither_responsive .mobs_esqueletowither_responsive-jpg {
+        height: 250px;
+        width: 150px; }
+      .mobs_responsive .esqueletowither_responsive .mobs_esqueletowither_responsive-subtitle {
+        display: block;
+        position: absolute;
+        color: grey;
+        font-size: 30px;
+        margin-top: 20px; }
+      .mobs_responsive .esqueletowither_responsive .mobs_esqueletowither_responsive-texto1 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-top: 50px; }
+      .mobs_responsive .esqueletowither_responsive .mobs_esqueletowither_responsive-texto2 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-top: 75px; }
+      .mobs_responsive .esqueletowither_responsive .mobs_esqueletowither_responsive-texto3 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 5px;
+        margin-top: 110px; }
+      .mobs_responsive .esqueletowither_responsive .mobs_esqueletowither_responsive-texto4 {
+        display: block;
+        position: absolute;
+        color: greenyellow;
+        font-size: 20px;
+        margin-left: 5px;
+        margin-top: 135px; }
+    .mobs_responsive .cubodemagma_responsive {
+      margin-bottom: 250px;
+      padding-right: 120px; }
+      .mobs_responsive .cubodemagma_responsive .mobs_cubodemagma_responsive-gif {
+        height: 350px;
+        width: 150px; }
+      .mobs_responsive .cubodemagma_responsive .mobs_cubodemagma_responsive-subtitle {
+        display: block;
+        position: absolute;
+        color: red;
+        font-size: 30px;
+        margin-top: 20px; }
+      .mobs_responsive .cubodemagma_responsive .mobs_cubodemagma_responsive-gif {
+        margin-left: 20px; }
+      .mobs_responsive .cubodemagma_responsive .mobs_cubodemagma_responsive-texto1 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-top: 50px; }
+      .mobs_responsive .cubodemagma_responsive .mobs_cubodemagma_responsive-texto2 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-top: 75px; }
+    .mobs_responsive .ghast_responsive {
+      margin-bottom: 250px;
+      padding-right: 120px;
+      margin-left: 60px; }
+      .mobs_responsive .ghast_responsive .mobs_ghast_responsive-gif {
+        height: 350px;
+        width: 150px; }
+      .mobs_responsive .ghast_responsive .mobs_ghast_responsive-subtitle {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 30px;
+        margin-top: 20px; }
+      .mobs_responsive .ghast_responsive .mobs_ghast_responsive-texto1 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-top: 50px; }
+      .mobs_responsive .ghast_responsive .mobs_ghast_responsive-texto2 {
+        display: block;
+        position: absolute;
+        color: white;
+        font-size: 25px;
+        margin-top: 75px; }
+  /*Footer escritorio*/ }
+
+footer {
+  margin-top: 500px;
+  background-color: crimson; }
+  footer .footer2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+    footer .footer2 .cybergang {
+      height: 80px;
+      width: 80px; }
+    footer .footer2 .server {
+      height: 80px;
+      width: 80px; }
+    footer .footer2 .server3 {
+      position: absolute;
+      margin-left: 380px;
+      margin-top: 40px; }
+    footer .footer2 .server2 {
+      margin-right: 45px;
+      margin-top: 10px; }
+    footer .footer2 .discord {
+      margin-top: 25px; }
+
+.footer_responsive {
+  display: none; }
+
+/*Footer responsive*/
+@media screen and (max-width: 720px) {
+  footer {
+    display: none; }
+  .footer_responsive {
+    display: block;
+    margin-top: 300px;
+    background-color: crimson; }
+    .footer_responsive .footer2_responsive {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly; }
+      .footer_responsive .footer2_responsive .cybergang_responsive {
+        height: 60px;
+        width: 60px; }
+      .footer_responsive .footer2_responsive .server_responsive {
+        height: 60px;
+        width: 60px; } }

@@ -1,0 +1,352 @@
+@import "variables.scss";
+@import "mixins.scss";
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+background-color: $body_color;
+}
+/*nav escritorio*/
+.nav{
+    background-color: green;
+    &_jpg{
+        @include sizes(50px, 50px)
+    }
+    h1{
+        display: $display;
+      position: $position;
+      color: black;
+      font-size: 25px;
+      left: 60px;
+      top: 8px;
+      animation-name: aparecer;
+      animation-duration: 2s;
+      animation-iteration-count: initial;
+    }
+    @keyframes aparecer {
+        0%{
+            opacity: 0;
+        }
+        100%{
+            opacity: 1;
+        }
+}
+}
+.nav_responsive{
+    display: none;
+}
+/*nav responsive*/
+@media screen and (max-width: 720px){
+    .nav{
+        display: none;
+    }
+    .nav_responsive{
+        display: $display_F;
+        flex-direction: row;
+        justify-content: start;
+        background-color: green;
+        width: 100%;
+        
+        &-jpg{
+            @include sizes(50px, 50px)
+        }
+        h1{
+            animation-name: aparecer-responsive;
+          animation-duration: 2s;
+          animation-iteration-count: initial;
+          font-size: 20px;
+          margin-top: 8px;
+          margin-left: 5px;
+        }
+        @keyframes aparecer-responsive {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+    }
+}
+.biomas{
+    display: $display_F;
+    flex-direction: $flex_R;
+    justify-content: space-between;
+    margin-left: 30px;
+
+    .overworldtierra{
+        &_h2{
+            color: $color_G;
+            margin-left: 30px;
+            margin-top: 40px;
+        }
+        &_jpg{
+            position: $position;
+            display: $display;
+            margin-top: 20px;
+            opacity: 0.6;
+            transition: 0.7s;
+            @include sizes(250px, 400px)
+        }
+        &_jpg:hover{
+            opacity: 1;
+        }
+    }
+    .overworldmar{
+        margin-top: 38px;
+        margin-left:30px;
+        &_h2{
+            display: $display;
+          color: aqua;
+          font-size: $bioma_titulo;
+          margin-bottom: 20px;
+          margin-left: 40px;
+        }
+        &_jpg{
+            opacity: 0.6;
+            transition: 0.7s;
+            @include sizes(250px, 400px)
+        }
+        &_jpg:hover{
+            opacity: 1;
+        }
+    }
+    .nether{
+        margin-top: 38px;
+        &_h2{
+            display: $display;
+          color: red;
+          font-size: $bioma_titulo;
+          margin-bottom: 20px;
+        margin-left: 80px;
+        }
+        &_jpg{
+            opacity: 0.6;
+            transition: 0.7s;
+            @include sizes(250px, 400px)
+        }
+        &_jpg:hover{
+            opacity: 1;
+        }
+    
+        
+    }
+    .end{
+        &_h2{
+            display: $display;
+            color: purple;
+            font-size: $bioma_titulo;
+            margin-top: 40px;
+            margin-left: 90px;
+            margin-bottom: 20px;
+        }
+        &_jpg{
+            opacity: 0.6;
+            transition: 0.7s;
+            @include sizes(250px, 400px)
+        }
+        &_jpg:hover{
+            opacity: 1;
+        }
+}
+}
+
+
+.descripcion{
+    display: $display_F;
+    flex-direction: $flex_C;
+    justify-content: start;
+    margin-top: 40px;
+
+    &_subtitle{
+        color:blue;
+        margin-left: 30px;
+    }
+    &_texto{
+        color: $color_W;
+        margin-top: 20px;
+        margin-left: 30px;
+        font-size: $mobs_probabilidad;
+        margin-bottom: 70px;
+    }
+}
+.biomas_responsive{
+    display: none;
+}
+.descripcion_responsive{
+    display: none;
+}
+/*Biomas responsive*/
+@media screen and (max-width: 720px){
+    .biomas{
+        display: none;
+    }
+    .descripcion{
+        display: none;
+    }
+
+    .descripcion_responsive{
+        display: $display_F;
+        flex-direction: $flex_C;
+        justify-content: start;
+        margin-top: 40px;
+
+        .descripcion_subtitle_responsive{
+            color:blue;
+            margin-left: 30px;
+        }
+        .descripcion_texto_responsive{
+            color: $color_W;
+            margin-top: 20px;
+            margin-left: 30px;
+            font-size: $mobs_probabilidad;
+            margin-bottom: 70px;
+        }
+    }
+    
+    .biomas_responsive{
+        display: $display_F;
+        flex-direction: $flex_C;
+        align-items:center;
+        width: 100%;
+        margin-top: 25px;
+
+        .overworldtierra_responsive{
+            margin-right: 30px;
+    
+            .overworldtierra_h2_responsive{
+                color: $color_G;
+                margin-left: 30px;
+                margin-top: 40px;
+            }
+            .overworldtierra_jpg_responsive{
+                position: $position;
+                display: $display;
+                margin-top: 20px;
+                opacity: 0.6;
+                transition: 0.7s;
+                @include sizes(250px, 400px)
+            }
+            .overworldtierra_jpg:hover{
+                opacity: 1;
+            }
+        }
+        
+        .overworldmar_responsive{
+            margin-top: 470px;
+    
+            .overworldmar_h2_responsive{
+                display: $display;
+              color: aqua;
+              font-size: $bioma_titulo;
+              margin-bottom: 20px;
+              margin-left: 40px;
+            }
+            .overworldmar_jpg_responsive{
+                opacity: 0.6;
+                transition: 0.7s;
+                @include sizes(250px, 400px)
+            }
+            .overworldmar_jpg:hover{
+                opacity: 1;
+            }
+        }
+        
+        .nether_responsive{
+            margin-top: 38px;
+    
+            .nether_h2_responsive{
+                display: $display;
+              color: red;
+              font-size: $bioma_titulo;
+              margin-bottom: 20px;
+            margin-left: 80px;
+            }
+            .nether_jpg_responsive{
+                opacity: 0.6;
+                transition: 0.7s;
+                @include sizes(250px, 400px)
+            }
+            .nether_jpg:hover{
+                opacity: 1;
+            }
+        }
+        .end_responsive{
+            .end_h2_responsive{
+                display: $display;
+                color: purple;
+                font-size: $bioma_titulo;
+                margin-top: 40px;
+                margin-left: 90px;
+                margin-bottom: 20px;
+            }
+            .end_jpg_responsive{
+                opacity: 0.6;
+                transition: 0.7s;
+                @include sizes(250px, 400px)
+            }
+            .end_jpg:hover{
+                opacity: 1;
+            }
+        }
+    }
+}
+/*Footer escritorio*/
+footer{
+    margin-top: 100px;
+    background-color: $footer_color;
+
+    .footer2{
+        display: $display_F;
+        flex-direction: $flex_R;
+        justify-content: space-evenly;
+        
+        .server{
+            @include sizes(80px, 80px)
+        }
+        .server3{
+            position: $position;
+            margin-left: 380px;
+            margin-top: 40px;
+        }
+        .server2{
+            margin-right: 45px;
+            margin-top: 10px;
+        }
+        .discord{
+            margin-top: 25px;
+        }
+        .cybergang{
+            @include sizes(80px, 80px)
+        }
+    }
+}
+.footer_responsive{
+    display: none;
+}
+/*Footer responsive*/
+@media screen and (max-width: 720px){
+    footer{
+        display: none;
+    }
+    .footer_responsive{
+        display: $display;
+        margin-top: 200px;
+        background-color: $footer_color;
+
+        .footer2_responsive{
+            display: $display_F;
+            flex-direction: $flex_C;
+            align-items:center;
+            justify-content: space-evenly;
+    
+            .cybergang_responsive{
+                @include sizes(60px, 60px)
+            }
+            .server_responsive{
+                @include sizes(60px, 60px)
+            }
+        }
+    }
+}
